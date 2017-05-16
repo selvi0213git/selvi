@@ -1,0 +1,68 @@
+/* #Main Menu */
+.main-navigation .menu > li > a {
+	color: $regular_accent_color_2;
+}
+.invert .main-navigation .menu > li > a {
+	color: $invert_accent_color_2;
+}
+.main-navigation .menu > li > a:hover,
+.main-navigation .menu > li.menu-hover > a,
+.main-navigation .menu > li.current_page_item > a,
+.main-navigation .menu > li.current_page_ancestor > a,
+.main-navigation .menu > li.current-menu-item > a,
+.main-navigation .menu > li.current-menu-ancestor > a {
+	color: $regular_accent_color_1;
+}
+.main-navigation .sub-menu,
+.main-navigation.mobile-menu {
+	background: @lighten($regular_accent_color_3, 1.2%);
+}
+.main-navigation ul ul a {
+	color: $regular_accent_color_2;
+}
+.main-navigation .sub-menu > li > a:hover,
+.main-navigation .sub-menu > li.menu-hover > a,
+.main-navigation .sub-menu > li.current_page_item > a,
+.main-navigation .sub-menu > li.current_page_ancestor > a,
+.main-navigation .sub-menu > li.current-menu-item > a,
+.main-navigation .sub-menu > li.current-menu-ancestor > a {
+	color: $regular_accent_color_1;
+}
+.menu-item__desc {
+	color: $regular_text_color;
+}
+.invert .menu-item__desc {
+	color: $invert_text_color;
+}
+
+.menu-toggle[aria-controls="main-menu"],
+.main-navigation .menu li a.sub-menu-toggle {
+	color: $regular_accent_color_2;
+}
+
+/* #Footer Menu */
+.footer-menu__items li a {
+	color: $regular_link_hover_color;
+}
+.invert .footer-menu__items li a {
+	color: $invert_link_color;
+}
+.footer-menu__items li a:hover,
+.footer-menu__items li.current-menu-item a,
+.footer-menu__items li.current_page_item a,
+.invert .footer-menu__items li a:hover,
+.invert .footer-menu__items li.current-menu-item a,
+.invert .footer-menu__items li.current_page_item a {
+	color: $regular_link_color;
+}
+
+/* #Top Menu */
+.top-panel__menu .menu-item.current-menu-item a,
+.top-panel__menu .menu-item.current_page_item a {
+	color: $regular_link_hover_color;
+}
+
+.invert .top-panel__menu .menu-item.current-menu-item a,
+.invert .top-panel__menu .menu-item.current_page_item a {
+	color: $regular_link_color;
+}
