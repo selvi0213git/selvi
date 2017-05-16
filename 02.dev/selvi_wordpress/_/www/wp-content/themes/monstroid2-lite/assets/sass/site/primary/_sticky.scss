@@ -1,0 +1,24 @@
+.sticky {
+	display: block;
+	&__label {
+		display: block;
+		text-align: center;
+		border-radius: 50%;
+		width: 30px;
+		height: 30px;
+		margin-right: 11px;
+		flex-shrink: 0;
+		margin-top: 3px;
+		float: left;
+		.posts-list--default & {
+			margin-top: 6px;
+		}
+		.material-icons,
+		.fa,
+		.linearicon{
+			font-size: 20px;
+			line-height: 28px;
+			display: block;
+		}
+	}
+}

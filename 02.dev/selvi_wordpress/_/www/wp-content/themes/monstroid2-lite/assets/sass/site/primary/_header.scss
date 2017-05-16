@@ -1,0 +1,78 @@
+.site-header {
+	margin-top: 60px;
+	@include media-breakpoint-up(md) {
+		margin-top: 0;
+	}
+}
+
+.header-container {
+	padding: 35px 0;
+	@include media-breakpoint-up(md) {
+		padding: 19.5px 0;
+	}
+	.centered & {
+		@include media-breakpoint-up(md) {
+			padding: 60px 0;
+		}
+	}
+}
+
+.header-container {
+	&__flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-content: stretch;
+		align-items: center;
+		margin-left: -15px;
+		margin-right: -15px;
+		@include media-breakpoint-up(md) {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		> * {
+			margin-right: 15px;
+			margin-left: 15px;
+		}
+
+		.centered & {
+			@include media-breakpoint-up(md) {
+				flex-direction: column;
+				flex-wrap: nowrap;
+			}
+		}
+	}
+}
+
+.main-navigation {
+	@include media-breakpoint-up(md) {
+		&.isStuck {
+			position: fixed;
+			z-index: 1000;
+			right: 0;
+			left: 0;
+			width: 100% !important;
+			margin: 0 !important;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid $color__background-hr;
+
+			.menu {
+				justify-content: center !important;
+			}
+		}
+	}
+}
+
+.pseudoStickyBlock {
+	width: 100%;
+}
+
+.isStuck ~ .pseudoStickyBlock {
+	width: auto;
+}
+
+@import "header/layout-default";
+@import "header/layout-centered";
+@import "header/top-panel";
+@import "header/logo";

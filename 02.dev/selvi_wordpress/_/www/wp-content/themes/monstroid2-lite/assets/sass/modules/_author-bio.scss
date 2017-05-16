@@ -1,0 +1,40 @@
+.post {
+	&-author {
+		&-bio {
+			margin: 0 0 30px;
+			padding-top: 30px;
+			border-top: 1px solid $color__background-hr;
+			@include media-breakpoint-up(lg) {
+				padding-top: 60px;
+				margin-bottom: 60px;
+			}
+		}
+		&__holder {}
+
+		&__avatar {
+			float: left;
+			margin: 10px 1em 10px 0;
+
+			@include media-breakpoint-up(lg) {
+				margin: 10px 2em 10px 0;
+			}
+			.avatar {
+				width: 70px;
+				vertical-align: top;
+				border-radius: 50%;
+
+				@include media-breakpoint-up(lg) {
+					width: auto;
+				}
+			}
+		}
+		&__title {
+			@include media-breakpoint-up(lg) {
+				margin: 0 0 20px;
+			}
+		}
+		&__content {
+			line-height: 1.7;
+		}
+	}
+}

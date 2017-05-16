@@ -1,0 +1,684 @@
+{
+  "icons": [
+    {
+      "id": "home",
+      "unicode": "e800"
+    },
+    {
+      "id": "apartment",
+      "unicode": "e801"
+    },
+    {
+      "id": "pencil",
+      "unicode": "e802"
+    },
+    {
+      "id": "magic-wand",
+      "unicode": "e803"
+    },
+    {
+      "id": "drop",
+      "unicode": "e804"
+    },
+    {
+      "id": "lighter",
+      "unicode": "e805"
+    },
+    {
+      "id": "poop",
+      "unicode": "e806"
+    },
+    {
+      "id": "sun",
+      "unicode": "e807"
+    },
+    {
+      "id": "moon",
+      "unicode": "e808"
+    },
+    {
+      "id": "cloud",
+      "unicode": "e809"
+    },
+    {
+      "id": "cloud-upload",
+      "unicode": "e80a"
+    },
+    {
+      "id": "cloud-download",
+      "unicode": "e80b"
+    },
+    {
+      "id": "cloud-sync",
+      "unicode": "e80c"
+    },
+    {
+      "id": "cloud-check",
+      "unicode": "e80d"
+    },
+    {
+      "id": "database",
+      "unicode": "e80e"
+    },
+    {
+      "id": "lock",
+      "unicode": "e80f"
+    },
+    {
+      "id": "cog",
+      "unicode": "e810"
+    },
+    {
+      "id": "trash",
+      "unicode": "e811"
+    },
+    {
+      "id": "dice",
+      "unicode": "e812"
+    },
+    {
+      "id": "heart",
+      "unicode": "e813"
+    },
+    {
+      "id": "star",
+      "unicode": "e814"
+    },
+    {
+      "id": "star-half",
+      "unicode": "e815"
+    },
+    {
+      "id": "star-empty",
+      "unicode": "e816"
+    },
+    {
+      "id": "flag",
+      "unicode": "e817"
+    },
+    {
+      "id": "envelope",
+      "unicode": "e818"
+    },
+    {
+      "id": "paperclip",
+      "unicode": "e819"
+    },
+    {
+      "id": "inbox",
+      "unicode": "e81a"
+    },
+    {
+      "id": "eye",
+      "unicode": "e81b"
+    },
+    {
+      "id": "printer",
+      "unicode": "e81c"
+    },
+    {
+      "id": "file-empty",
+      "unicode": "e81d"
+    },
+    {
+      "id": "file-add",
+      "unicode": "e81e"
+    },
+    {
+      "id": "enter",
+      "unicode": "e81f"
+    },
+    {
+      "id": "exit",
+      "unicode": "e820"
+    },
+    {
+      "id": "graduation-hat",
+      "unicode": "e821"
+    },
+    {
+      "id": "license",
+      "unicode": "e822"
+    },
+    {
+      "id": "music-note",
+      "unicode": "e823"
+    },
+    {
+      "id": "film-play",
+      "unicode": "e824"
+    },
+    {
+      "id": "camera-video",
+      "unicode": "e825"
+    },
+    {
+      "id": "camera",
+      "unicode": "e826"
+    },
+    {
+      "id": "picture",
+      "unicode": "e827"
+    },
+    {
+      "id": "book",
+      "unicode": "e828"
+    },
+    {
+      "id": "bookmark",
+      "unicode": "e829"
+    },
+    {
+      "id": "user",
+      "unicode": "e82a"
+    },
+    {
+      "id": "users",
+      "unicode": "e82b"
+    },
+    {
+      "id": "shirt",
+      "unicode": "e82c"
+    },
+    {
+      "id": "store",
+      "unicode": "e82d"
+    },
+    {
+      "id": "cart",
+      "unicode": "e82e"
+    },
+    {
+      "id": "tag",
+      "unicode": "e82f"
+    },
+    {
+      "id": "phone-handset",
+      "unicode": "e830"
+    },
+    {
+      "id": "phone",
+      "unicode": "e831"
+    },
+    {
+      "id": "pushpin",
+      "unicode": "e832"
+    },
+    {
+      "id": "map-marker",
+      "unicode": "e833"
+    },
+    {
+      "id": "map",
+      "unicode": "e834"
+    },
+    {
+      "id": "location",
+      "unicode": "e835"
+    },
+    {
+      "id": "calendar-full",
+      "unicode": "e836"
+    },
+    {
+      "id": "keyboard",
+      "unicode": "e837"
+    },
+    {
+      "id": "spell-check",
+      "unicode": "e838"
+    },
+    {
+      "id": "screen",
+      "unicode": "e839"
+    },
+    {
+      "id": "smartphone",
+      "unicode": "e83a"
+    },
+    {
+      "id": "tablet",
+      "unicode": "e83b"
+    },
+    {
+      "id": "laptop",
+      "unicode": "e83c"
+    },
+    {
+      "id": "laptop-phone",
+      "unicode": "e83d"
+    },
+    {
+      "id": "power-switch",
+      "unicode": "e83e"
+    },
+    {
+      "id": "bubble",
+      "unicode": "e83f"
+    },
+    {
+      "id": "heart-pulse",
+      "unicode": "e840"
+    },
+    {
+      "id": "construction",
+      "unicode": "e841"
+    },
+    {
+      "id": "pie-chart",
+      "unicode": "e842"
+    },
+    {
+      "id": "chart-bars",
+      "unicode": "e843"
+    },
+    {
+      "id": "gift",
+      "unicode": "e844"
+    },
+    {
+      "id": "diamond",
+      "unicode": "e845"
+    },
+    {
+      "id": "linearicons",
+      "unicode": "e846"
+    },
+    {
+      "id": "dinner",
+      "unicode": "e847"
+    },
+    {
+      "id": "coffee-cup",
+      "unicode": "e848"
+    },
+    {
+      "id": "leaf",
+      "unicode": "e849"
+    },
+    {
+      "id": "paw",
+      "unicode": "e84a"
+    },
+    {
+      "id": "rocket",
+      "unicode": "e84b"
+    },
+    {
+      "id": "briefcase",
+      "unicode": "e84c"
+    },
+    {
+      "id": "bus",
+      "unicode": "e84d"
+    },
+    {
+      "id": "car",
+      "unicode": "e84e"
+    },
+    {
+      "id": "train",
+      "unicode": "e84f"
+    },
+    {
+      "id": "bicycle",
+      "unicode": "e850"
+    },
+    {
+      "id": "wheelchair",
+      "unicode": "e851"
+    },
+    {
+      "id": "select",
+      "unicode": "e852"
+    },
+    {
+      "id": "earth",
+      "unicode": "e853"
+    },
+    {
+      "id": "smile",
+      "unicode": "e854"
+    },
+    {
+      "id": "sad",
+      "unicode": "e855"
+    },
+    {
+      "id": "neutral",
+      "unicode": "e856"
+    },
+    {
+      "id": "mustache",
+      "unicode": "e857"
+    },
+    {
+      "id": "alarm",
+      "unicode": "e858"
+    },
+    {
+      "id": "bullhorn",
+      "unicode": "e859"
+    },
+    {
+      "id": "volume-high",
+      "unicode": "e85a"
+    },
+    {
+      "id": "volume-medium",
+      "unicode": "e85b"
+    },
+    {
+      "id": "volume-low",
+      "unicode": "e85c"
+    },
+    {
+      "id": "volume",
+      "unicode": "e85d"
+    },
+    {
+      "id": "mic",
+      "unicode": "e85e"
+    },
+    {
+      "id": "hourglass",
+      "unicode": "e85f"
+    },
+    {
+      "id": "undo",
+      "unicode": "e860"
+    },
+    {
+      "id": "redo",
+      "unicode": "e861"
+    },
+    {
+      "id": "sync",
+      "unicode": "e862"
+    },
+    {
+      "id": "history",
+      "unicode": "e863"
+    },
+    {
+      "id": "clock",
+      "unicode": "e864"
+    },
+    {
+      "id": "download",
+      "unicode": "e865"
+    },
+    {
+      "id": "upload",
+      "unicode": "e866"
+    },
+    {
+      "id": "enter-down",
+      "unicode": "e867"
+    },
+    {
+      "id": "exit-up",
+      "unicode": "e868"
+    },
+    {
+      "id": "bug",
+      "unicode": "e869"
+    },
+    {
+      "id": "code",
+      "unicode": "e86a"
+    },
+    {
+      "id": "link",
+      "unicode": "e86b"
+    },
+    {
+      "id": "unlink",
+      "unicode": "e86c"
+    },
+    {
+      "id": "thumbs-up",
+      "unicode": "e86d"
+    },
+    {
+      "id": "thumbs-down",
+      "unicode": "e86e"
+    },
+    {
+      "id": "magnifier",
+      "unicode": "e86f"
+    },
+    {
+      "id": "cross",
+      "unicode": "e870"
+    },
+    {
+      "id": "menu",
+      "unicode": "e871"
+    },
+    {
+      "id": "list",
+      "unicode": "e872"
+    },
+    {
+      "id": "chevron-up",
+      "unicode": "e873"
+    },
+    {
+      "id": "chevron-down",
+      "unicode": "e874"
+    },
+    {
+      "id": "chevron-left",
+      "unicode": "e875"
+    },
+    {
+      "id": "chevron-right",
+      "unicode": "e876"
+    },
+    {
+      "id": "arrow-up",
+      "unicode": "e877"
+    },
+    {
+      "id": "arrow-down",
+      "unicode": "e878"
+    },
+    {
+      "id": "arrow-left",
+      "unicode": "e879"
+    },
+    {
+      "id": "arrow-right",
+      "unicode": "e87a"
+    },
+    {
+      "id": "move",
+      "unicode": "e87b"
+    },
+    {
+      "id": "warning",
+      "unicode": "e87c"
+    },
+    {
+      "id": "question-circle",
+      "unicode": "e87d"
+    },
+    {
+      "id": "menu-circle",
+      "unicode": "e87e"
+    },
+    {
+      "id": "checkmark-circle",
+      "unicode": "e87f"
+    },
+    {
+      "id": "cross-circle",
+      "unicode": "e880"
+    },
+    {
+      "id": "plus-circle",
+      "unicode": "e881"
+    },
+    {
+      "id": "circle-minus",
+      "unicode": "e882"
+    },
+    {
+      "id": "arrow-up-circle",
+      "unicode": "e883"
+    },
+    {
+      "id": "arrow-down-circle",
+      "unicode": "e884"
+    },
+    {
+      "id": "arrow-left-circle",
+      "unicode": "e885"
+    },
+    {
+      "id": "arrow-right-circle",
+      "unicode": "e886"
+    },
+    {
+      "id": "chevron-up-circle",
+      "unicode": "e887"
+    },
+    {
+      "id": "chevron-down-circle",
+      "unicode": "e888"
+    },
+    {
+      "id": "chevron-left-circle",
+      "unicode": "e889"
+    },
+    {
+      "id": "chevron-right-circle",
+      "unicode": "e88a"
+    },
+    {
+      "id": "crop",
+      "unicode": "e88b"
+    },
+    {
+      "id": "frame-expand",
+      "unicode": "e88c"
+    },
+    {
+      "id": "frame-contract",
+      "unicode": "e88d"
+    },
+    {
+      "id": "layers",
+      "unicode": "e88e"
+    },
+    {
+      "id": "funnel",
+      "unicode": "e88f"
+    },
+    {
+      "id": "text-format",
+      "unicode": "e890"
+    },
+    {
+      "id": "text-format-remove",
+      "unicode": "e891"
+    },
+    {
+      "id": "text-size",
+      "unicode": "e892"
+    },
+    {
+      "id": "bold",
+      "unicode": "e893"
+    },
+    {
+      "id": "italic",
+      "unicode": "e894"
+    },
+    {
+      "id": "underline",
+      "unicode": "e895"
+    },
+    {
+      "id": "strikethrough",
+      "unicode": "e896"
+    },
+    {
+      "id": "highlight",
+      "unicode": "e897"
+    },
+    {
+      "id": "text-align-left",
+      "unicode": "e898"
+    },
+    {
+      "id": "text-align-center",
+      "unicode": "e899"
+    },
+    {
+      "id": "text-align-right",
+      "unicode": "e89a"
+    },
+    {
+      "id": "text-align-justify",
+      "unicode": "e89b"
+    },
+    {
+      "id": "line-spacing",
+      "unicode": "e89c"
+    },
+    {
+      "id": "indent-increase",
+      "unicode": "e89d"
+    },
+    {
+      "id": "indent-decrease",
+      "unicode": "e89e"
+    },
+    {
+      "id": "pilcrow",
+      "unicode": "e89f"
+    },
+    {
+      "id": "direction-ltr",
+      "unicode": "e8a0"
+    },
+    {
+      "id": "direction-rtl",
+      "unicode": "e8a1"
+    },
+    {
+      "id": "page-break",
+      "unicode": "e8a2"
+    },
+    {
+      "id": "sort-alpha-asc",
+      "unicode": "e8a3"
+    },
+    {
+      "id": "sort-amount-asc",
+      "unicode": "e8a4"
+    },
+    {
+      "id": "hand",
+      "unicode": "e8a5"
+    },
+    {
+      "id": "pointer-up",
+      "unicode": "e8a6"
+    },
+    {
+      "id": "pointer-right",
+      "unicode": "e8a7"
+    },
+    {
+      "id": "pointer-down",
+      "unicode": "e8a8"
+    },
+    {
+      "id": "pointer-left",
+      "unicode": "e8a9"
+    }
+  ]
+}

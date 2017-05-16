@@ -1,0 +1,81 @@
+.site {
+	@include hyphens(auto);
+	overflow: hidden;
+
+	&-content {
+
+	}
+
+	&-content_wrap {
+		margin-top: 3em;
+
+		.sidebar {
+			position: relative;
+			.position-one-right-sidebar &,
+			.position-one-left-sidebar & {
+				@include media-breakpoint-up(lg) {
+					&:before {
+						position: absolute;
+						width: 1px;
+						height: calc( 100% - 70px );
+						content: '';
+						background: $color__background-hr;
+						top: 0;
+					}
+				}
+			}
+
+			.position-one-right-sidebar & {
+				@include media-breakpoint-up(lg) {
+					&:before {
+						left: 0;
+					}
+				}
+				@include media-breakpoint-up(xl) {
+					padding-left: $grid-gutter-width * 1.5;
+					&:before {
+						left: 25px;
+					}
+				}
+			}
+			.position-one-left-sidebar & {
+				@include media-breakpoint-up(lg) {
+					&:before {
+						right: 0;
+					}
+				}
+				@include media-breakpoint-up(xl) {
+					padding-right: $grid-gutter-width * 1.5;
+					&:before {
+						right: 25px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Layout
+--------------------------------------------------------------*/
+@import "../layout/layout";
+
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+@import "primary/header";
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Post Formats
+--------------------------------------------------------------*/
+@import "primary/post-formats";
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+@import "primary/footer";

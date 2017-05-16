@@ -1,0 +1,29 @@
+.site-footer {
+	@include font-size(.875);
+	line-height: 1.714285;
+}
+
+.footer-container {
+	padding: 30px 0 25px;
+	.site-footer.centered & {
+		padding-top: 80px;
+		padding-bottom: 80px;
+		@include media-breakpoint-up(lg) {
+			padding-top: 135px;
+			padding-bottom: 135px;
+		}
+	}
+}
+
+.site-info {
+	.footer-logo,
+	.social-list,
+	.footer-menu,
+	.footer-copyright {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+@import "footer/layout-default";
+@import "footer/layout-centered";

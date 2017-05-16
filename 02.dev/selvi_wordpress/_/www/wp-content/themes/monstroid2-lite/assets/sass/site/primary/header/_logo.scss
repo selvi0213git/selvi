@@ -1,0 +1,15 @@
+.site-logo {
+	margin: 0;
+	line-height: 1;
+	&__link {
+		text-decoration: none;
+		line-height: 1;
+		color: inherit;
+		&:focus {
+			outline: none;
+		}
+	}
+}
+.site-description {
+	@include font-size(12/16);
+}

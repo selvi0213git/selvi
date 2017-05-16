@@ -1,0 +1,109 @@
+.top-panel {
+	&__container {
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: -999em;
+			right: -999em;
+			border-bottom: 1px solid $color__background-hr;
+			.top-panel.invert &{
+				border-bottom: none;
+			}
+			@include media-breakpoint-up(md) {
+				left: 25px;
+				right: 25px;
+			}
+		}
+	}
+	&__wrap {
+		position: relative;
+
+		padding-top: 25px;
+		padding-bottom: 10px;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+		@include media-breakpoint-up(md) {
+			flex-direction: row;
+
+			padding-top: 7.5px;
+			padding-bottom: 7.5px;
+		}
+	}
+	&__right {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		margin-left: -15px;
+		margin-right: -15px;
+		@include media-breakpoint-up(md) {
+			flex-direction: row;
+		}
+		@include media-breakpoint-up(lg) {
+			margin-left: -25px;
+			margin-right: -25px;
+		}
+
+		> * {
+			padding-left: 15px;
+			padding-right: 15px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+
+			@include media-breakpoint-up(md) {
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			@include media-breakpoint-up(lg) {
+				padding-left: 25px;
+				padding-right: 25px;
+			}
+			@include media-breakpoint-up(md) {
+				& + * {
+					border-left: 1px solid $color__background-hr;
+				}
+			}
+		}
+
+		> *:not(.header-search) {
+			@include media-breakpoint-up(md) {
+				visibility: visible;
+				opacity: 1;
+				transition: .3s;
+				.site-header.search-active &{
+					opacity: 0;
+					visibility: hidden;
+					transform: translateY(15px);
+				}
+			}
+		}
+	}
+	&__message {
+		@include font-size(12/16);
+		margin-top: 5px;
+		margin-bottom: 5px;
+
+		transition: .3s;
+		.site-header.search-active &{
+			@include media-breakpoint-up(md) {
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(15px);
+			}
+		}
+	}
+	.header-search {
+		display: none;
+		@include media-breakpoint-up(md) {
+			display: block;
+			.site-header.search-active & {
+				order: 5;
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+.site-header.centered {
+	.main-navigation {
+		@include media-breakpoint-up(md) {
+			margin-top: 28px;
+		}
+		.menu {
+			justify-content: center;
+		}
+	}
+	.contact-block {
+		margin-top: 15px;
+	}
+	.header-btn {
+		margin-top: 25px;
+	}
+	.header-container__items-wrap {
+		text-align: center;
+		@include media-breakpoint-up(xl) {
+			width: calc(100% - 30px);
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			> * {
+				margin-right: 15px;
+				margin-left: 15px;
+				margin-top: 15px;
+			}
+		}
+	}
+}
