@@ -391,3 +391,18 @@ add_action( 'admin_menu', 'proton_remove_redux_menu',12 );
 function proton_remove_redux_menu() {
 	remove_submenu_page('tools.php','redux-about');
 }
+
+/** 보류
+//글 작성자 이메일전송기능 추가 20170518 eley
+add_action('kboard_comments_insert', 'my_kboard_comments_insert', 10, 2);
+function my_kboard_comments_insert($comment_uid, $content_uid){
+    $content = new KBContent();
+    $content->initWithUID($content_uid);
+    if($content->option->email){
+        $email = $content->option->email;
+        $title = '등록하신 글에 대해 답변이 등록 되었습니다.';
+        $content = '등록하신 글에 대해 답변이 등록 되었습니다. 게시판을 확인해주세요.';
+        wp_mail($email, $title, $content);
+    }
+}
+*/
