@@ -271,8 +271,9 @@
 				<?php if($portfolio_style == '3' || $portfolio_style == '4') :  ?>
 					<div class="meta-tags-outside">
 						<h3><a title="<?php the_title(); ?>" href="<?php echo esc_attr($proton_post_url) ?>"><?php the_title(); ?></a></h3>
+						<!--포트폴리오 템플릿 카테고리 숨기기 20170523 eley-->
 						<span>
-							<?php
+							<!--<?php
 								$proton_portfolio_categories_link = $options['proton_portfolio_categories_link'];
 								if($proton_portfolio_categories_link){
 									foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; }
@@ -280,7 +281,7 @@
 								else {
 									the_category(' ');
 								}
-							?>
+							?>-->
 						</span>
 					</div>
 				<?php endif; ?>
