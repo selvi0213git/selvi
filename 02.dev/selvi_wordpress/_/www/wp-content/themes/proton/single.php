@@ -235,7 +235,8 @@
 					<?php comments_template(); ?>
 				</div>
 				<div class="<?php echo esc_attr($blog_single_layout_sidebar); ?>">
-					<?php get_sidebar(); ?>
+					<!--상세페이지내의 사이드바 안보이게 20170525 eley-->
+					<!--<?php get_sidebar(); ?>-->
 				</div>
 			</div>
 		</div>

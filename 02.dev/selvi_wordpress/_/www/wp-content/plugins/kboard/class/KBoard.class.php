@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * KBoard 워드프레스 게시판 설정
  * @link www.cosmosfarm.com
@@ -261,7 +261,7 @@ class KBoard {
 	 * @param boolean $reauth
 	 * @return boolean
 	 */
-	public function isConfirm($password, $content_uid, $reauth=false){
+	public function isConfirm($password, $content_uid, $reauth=true){
 		if(!$password || !$content_uid) return false;
 		
 		$submitted_password = isset($_POST['password'])?sanitize_text_field($_POST['password']):'';
