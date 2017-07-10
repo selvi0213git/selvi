@@ -2,24 +2,408 @@
 # This file is distributed under the same license as the Themes - Spacious package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-09-17 23:38:40+0000\n"
+"PO-Revision-Date: 2017-06-09 11:21:13+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/2.3.0-alpha\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: ko_KR\n"
 "Project-Id-Version: Themes - Spacious\n"
 
 #. Description of the plugin/theme
-msgid "Spacious is an incredibly spacious multipurpose responsive theme coded & designed with a lot of care and love. You can use it for your business, portfolio, blogging or any type of site. It has 4 page layouts, 2 page templates, 4 blog display types, 13 widgets areas, 5 custom widgets focusing on business template, awesome slider, primary color option to match your logo & website, boxed & wide layout, light & dark color skin, translation ready and many more. You can get free support in http://themegrill.com/support-forum/ and check the demo at http://demo.themegrill.com/spacious/."
-msgstr "Spacious는 세심한 주의와 사랑으로 코딩되고 디자인 된 상당히 넓은 폭의 다용도 반응형 테마입니다. 비지니스, 포트폴리오, 블로그 등 어떤 종류의 사이트에도 사용할 수 있습니다. 4종류의 레이지 레이아웃, 2개의 페이지 템플릿, 4개의 블로그 표시 타입, 13개의 위젯 영역, 5개의 사용자 정의 위젯이 있습니다. 비지니스 템플릿에 집중했고 굉장한 슬라이더, 로고와 웹사이트에 일치시킬 수 있는 주 색상 옵션, 박스 및 와이드 레이아웃, 밝음 및 어두운 색상 스킨, 번역 가능, 등 여러 가지 옵션이 있습니다. http://themegrill.com/support-forum/ 에서 무료지원을 받을 수 있고 http://demo.themegrill.com/spacious/ 에서 데모를 확인할 수 있습니다."
+msgid "Spacious is an incredibly spacious multipurpose responsive theme coded & designed with a lot of care and love. You can use it for your business, portfolio, blogging or any type of site. It has 4 page layouts, 2 page templates, 4 blog display types, 13 widgets areas, 5 custom widgets focusing on business template, awesome slider, primary color option to match your logo & website, boxed & wide layout, light & dark color skin, translation ready and many more. You can get free support in https://themegrill.com/support-forum/ and check the demo at https://demo.themegrill.com/spacious/."
+msgstr "Spacious는 세심한 주의와 사랑으로 코딩되고 디자인 된 상당히 넓은 폭의 다용도 반응형 테마입니다. 비지니스, 포트폴리오, 블로그 등 어떤 종류의 사이트에도 사용할 수 있습니다. 4종류의 레이지 레이아웃, 2개의 페이지 템플릿, 4개의 블로그 표시 타입, 13개의 위젯 영역, 5개의 사용자 정의 위젯이 있습니다. 비지니스 템플릿에 집중했고 굉장한 슬라이더, 로고와 웹사이트에 일치시킬 수 있는 주 색상 옵션, 박스 및 와이드 레이아웃, 밝음 및 어두운 색상 스킨, 번역 가능, 등 여러 가지 옵션이 있습니다. https://themegrill.com/support-forum/ 에서 무료지원을 받을 수 있고 https://demo.themegrill.com/spacious/ 에서 데모를 확인할 수 있습니다."
 
-#. #-#-#-#-#  spacious.pot (Spacious 1.4.4)  #-#-#-#-#
+#. #-#-#-#-#  spacious.pot (Spacious 1.4.6)  #-#-#-#-#
 #. Theme Name of the plugin/theme
 #: inc/admin/class-spacious-admin.php:353 inc/demo-config.php:24
 msgid "Spacious"
 msgstr "Spacious"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3520
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "플러그인 %1$s 설치중 (%2$d/%3$d)"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr "모든 설치 완료됨."
+
+#. translators: 1: plugin name.
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3517
+msgid "%1$s installed successfully."
+msgstr "%1$s 설치 성공."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3515
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "설치 과정이 시작됐습니다. 이 과정은 일부 호스팅에서 시간이 걸릴 수도 있습니다. 기다려 주세요."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3512
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "플러그인 %1$s 설치 및 활성화중 (%2$d/%3$d)"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr "모든 설치 및 활성화 완료됨."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3509
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr "상세 감추기"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3509
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr "상세 보이기"
+
+#. translators: 1: plugin name.
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3509
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s 설치 및 활성화 성공."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3507
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "설치 및 활성화 과정이 시작됐습니다. 이 과정은 일부 호스팅에서 시간이 걸릴 수도 있습니다. 기다려 주세요."
+
+#. translators: 1: plugin name.
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3503
+msgid "The installation of %1$s failed."
+msgstr "%1$s 설치 실패."
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3501
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "%1$s 설치중 에러 발생: <strong>%2$s</strong>."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3498
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "플러그인 %1$s 업데이트중 (%2$d/%3$d)"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr "플러그인 활성화 실패."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr "현재 활성화 가능한 플러그인이 없습니다."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr "활성화할 플러그인이 선택되지 않았습니다. 추가 작업은 없습니다."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr "현재는 업데이트 가능한 플러그인이 없습니다."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr "현재는 설치할 플러그인이 가능하지 않습니다."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "업데이트 할 플러그인이 선택되지 않았습니다. 추가 작업은 없습니다."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "설치할 플러그인이 선택되지 않았습니다. 추가 작업은 없습니다."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr "활성화"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr "업데이트"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr "플러그인 제작자의 업그레이드 메시지:"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2614
+msgid "Activate %2$s"
+msgstr "%2$s 활성화"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2608
+msgid "Update %2$s"
+msgstr "%2$s 업데이트"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2603
+msgid "Install %2$s"
+msgstr "%2$s 설치"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr "상태"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr "버전"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr "타입"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr "소스"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr "플러그인"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr "설치, 업데이트, 활성화 할 플러그인 없음."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr "가능한 버전:"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr "최소 필수 버전:"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr "설치된 버전:"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "알 수 없음"
+
+#. translators: 1: number of plugins.
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2400
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "활성화 <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2396
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "가능한 업데이트 <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2392
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "설치 <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2388
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "모두 <span class=\"count\">(%s)</span>"
+
+#. translators: 1: install status, 2: update status
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2342
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr "업데이트 권장됨"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr "업데이트 필요"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr "필수 업데이트가 가능하지 않음"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr "활성"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr "설치됐지만 비활성"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr "설치되지 않음"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr "미리 패키지됨"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr "외부 소스"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr "워드프레스 저장소"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr "추천됨"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr "필수"
+
+#. translators: %s: version number
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:1982
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:1121
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "그리고"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:937
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr "원격 플러그인 패키지가 하나 이상의 파일로 구성돼있지만 파일이 폴더에 패키지화 되지 않았습니다."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:934
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:937
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr "플러그인 제공자에 연락해 워드프레스 가이드라인에 따른 플러그인 패키지화를 요청하세요."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:934
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr "원격 플러그인 패키지가 필요한 슬러그가 포함된 폴더가 없으며 이름 수정이 작동하지 않았습니다."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr "업데이트 필요"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr "이 플러그인은 테마와 호환되려면 업데이트 해야합니다."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:397
+#: inc/tgm-plugin-activation/tgmpa-spacious.php:109
+msgid "Please contact the administrator of this site for help."
+msgstr "도움이 필요하면 이 사이트의 관리자에게 문의하세요."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:396
+#: inc/tgm-plugin-activation/tgmpa-spacious.php:108
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr "설치, 업데이트, 활성화 할 하나 이상의 필수 또는 권장 플러그인이 있습니다."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:395
+#: inc/tgm-plugin-activation/tgmpa-spacious.php:107
+msgid "Dismiss this notice"
+msgstr "이 공지 무시"
+
+#. translators: 1: dashboard link.
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:394
+#: inc/tgm-plugin-activation/tgmpa-spacious.php:106
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "모든 플러그인이 설치되고 성공적으로 활성화 됐습니다. %1$s"
+
+#. translators: 1: plugin name.
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:392
+#: inc/tgm-plugin-activation/tgmpa-spacious.php:104
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr "플러그인이 활성화 되지 않았습니다. %s의 더 높은 버전이 이 테마에 필요합니다. 플러그인을 업데이트 하세요."
+
+#. translators: 1: plugin name.
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:390
+#: inc/tgm-plugin-activation/tgmpa-spacious.php:102
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "작업이 없습니다. %1$s 플러그인이 이미 활성화 돼있습니다."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:388
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2952
+#: inc/tgm-plugin-activation/tgmpa-spacious.php:100
+msgid "The following plugin was activated successfully:"
+msgstr "다음 플러그인 활성화 성공:"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:387
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3159
+#: inc/tgm-plugin-activation/tgmpa-spacious.php:99
+msgid "Plugin activated successfully."
+msgstr "플러그인이 성공적으로 활성화 됐습니다."
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:386
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:827
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2533
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr "관리자 화면으로 돌아가기"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:385
+#: inc/tgm-plugin-activation/tgmpa-spacious.php:98
+msgid "Return to Required Plugins Installer"
+msgstr "필수 플러그인 설치로 돌아가기"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:380
+#: inc/tgm-plugin-activation/tgmpa-spacious.php:93
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "플러그인 활성화 시작하기"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:375
+#: inc/tgm-plugin-activation/tgmpa-spacious.php:88
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "플러그인 업데이트 시작하기"
+
+#. translators: 1: plugin name(s).
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:370
+#: inc/tgm-plugin-activation/tgmpa-spacious.php:83
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "플러그인 설치 시작하기"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:333
+#: inc/tgm-plugin-activation/tgmpa-spacious.php:46
+msgid "Something went wrong with the plugin API."
+msgstr "플러그인 API에 뭔가 잘못 됐습니다."
+
+#. translators: %s: plugin name.
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:332
+#: inc/tgm-plugin-activation/tgmpa-spacious.php:45
+msgid "Updating Plugin: %s"
+msgstr "플러그인 업데이트 중: %s"
+
+#. translators: %s: plugin name.
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:330
+#: inc/tgm-plugin-activation/tgmpa-spacious.php:43
+msgid "Installing Plugin: %s"
+msgstr "플러그인 설치: %s"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:328
+#: inc/tgm-plugin-activation/tgmpa-spacious.php:41
+msgid "Install Plugins"
+msgstr "플러그인 설치"
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:327
+#: inc/tgm-plugin-activation/tgmpa-spacious.php:40
+msgid "Install Required Plugins"
+msgstr "필수 플러그인 설치"
+
+#: inc/admin/class-spacious-admin.php:187
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr "설치"
+
+#: inc/admin/class-spacious-admin.php:186
+msgid "Needs ThemeGrill Demo Importer plugin."
+msgstr "ThemeGrill 데모 가져오기 플러그인이 필요합니다."
+
+#: inc/admin/class-spacious-admin.php:185
+msgid "Import Demo"
+msgstr "데모 가져오기"
+
+#: inc/customizer.php:102
+msgid "%sInfo:%s This option will be removed in upcoming update. Please go to Site Identity section to upload the theme logo."
+msgstr "%s정보:%s 이 옵션은 다음 업데이트에서 제거될 예정입니다. 사이트 아이덴티티 섹션으로 가서 테마 로고를 업로드 하세요."
 
 #: inc/admin/class-spacious-admin.php:329
 msgid "WPML"
@@ -894,7 +1278,7 @@ msgstr "Powered by %s."
 msgid "Copyright &copy; %1$s %2$s."
 msgstr "Copyright &copy; %1$s %2$s."
 
-#. #-#-#-#-#  spacious.pot (Spacious 1.4.4)  #-#-#-#-#
+#. #-#-#-#-#  spacious.pot (Spacious 1.4.6)  #-#-#-#-#
 #. Author of the plugin/theme
 #: inc/functions.php:495
 msgid "ThemeGrill"
@@ -1051,3 +1435,11 @@ msgstr "현재 위체에서 아무것도 찾을 수 없는 것 같습니다. 아
 #: 404.php:20
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "이런! 해당 페이지를 찾을 수 없습니다."
+
+#. Author URI of the plugin/theme
+msgid "https://themegrill.com"
+msgstr "https://themegrill.com"
+
+#. Theme URI of the plugin/theme
+msgid "https://themegrill.com/themes/spacious"
+msgstr "https://themegrill.com/themes/spacious"

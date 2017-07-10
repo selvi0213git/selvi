@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * KBoard 워드프레스 게시판 설정
  * @link www.cosmosfarm.com
@@ -261,6 +261,7 @@ class KBoard {
 	 * @param boolean $reauth
 	 * @return boolean
 	 */
+	 // $reauth=true로 변경 비밀글항시 비밀번호 입력 20170529 eley
 	public function isConfirm($password, $content_uid, $reauth=true){
 		if(!$password || !$content_uid) return false;
 		

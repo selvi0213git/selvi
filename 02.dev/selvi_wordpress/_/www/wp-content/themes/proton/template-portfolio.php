@@ -173,7 +173,7 @@
 					$proton_portfolio_ppp = $proton_portfolio_posts_per_page;
 				}
 				else {
-					$proton_portfolio_ppp = 9;
+					$proton_portfolio_ppp = 20;
 				}
 
 				// Paged

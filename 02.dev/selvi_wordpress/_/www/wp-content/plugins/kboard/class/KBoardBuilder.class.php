@@ -455,12 +455,15 @@ class KBoardBuilder {
 	 */
 	public function builderRemove(){
 		$url = new KBUrl();
-
+		
+		//이 페이지는 외부에서 접근을 제한하고있습니다 에러 수정 20170529 eley
+		/**
 		if(!wp_get_referer()){
 			echo '<script>alert("'.__('This page is restricted from external access.', 'kboard').'");</script>';
 			echo "<script>window.location.href='{$url->set('mod', 'list')->toString()}';</script>";
 			exit;
 		}
+		*/
 
 		$content = new KBContent($this->board_id);
 		$content->initWithUID($this->uid);
