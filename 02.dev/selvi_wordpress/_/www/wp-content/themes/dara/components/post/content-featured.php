@@ -17,7 +17,7 @@ if ( empty( $featured ) )
 				setup_postdata( $post ); ?>
 				<div class="hero-content-wrapper">
 					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-						<?php if ( has_post_thumbnail() ) { ?>
+						<?php if ( dara_has_post_thumbnail() ) { ?>
 							<?php the_post_thumbnail( 'dara-hero-thumbnail' ); ?>
 						<?php } else { ?>
 							<div class="thumbnail-placeholder"></div>

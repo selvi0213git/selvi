@@ -42,10 +42,12 @@ if ( ! function_exists( 'shop_isle_post_content' ) ) {
 			)
 		);
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . __( 'Pages:', 'shop-isle' ),
-			'after'  => '</div>',
-		) );
+		wp_link_pages(
+			array(
+				'before' => '<div class="page-links">' . __( 'Pages:', 'shop-isle' ),
+				'after'  => '</div>',
+			)
+		);
 		?>
 		</div><!-- .entry-content -->
 
@@ -108,8 +110,8 @@ if ( ! function_exists( 'shop_isle_post_nav' ) ) {
 	function shop_isle_post_nav() {
 		$args = array(
 			'next_text' => '%title &nbsp;<span class="meta-nav">&rarr;</span>',
-			'prev_text'	=> '<span class="meta-nav">&larr;</span>&nbsp;%title',
-			);
+			'prev_text' => '<span class="meta-nav">&larr;</span>&nbsp;%title',
+		);
 		the_post_navigation( $args );
 	}
 }
@@ -127,7 +129,8 @@ if ( ! function_exists( 'shop_isle_posted_on' ) ) {
 
 		$time_string = '<time class="entry-date published updated" datetime="%1$s" itemprop="datePublished">%2$s</time>';
 
-		$time_string = sprintf( $time_string,
+		$time_string = sprintf(
+			$time_string,
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() ),
 			esc_attr( get_the_modified_date( 'c' ) ),
@@ -156,10 +159,12 @@ if ( ! function_exists( 'shop_isle_posted_on' ) ) {
 		$shop_isleoutput = '';
 		if ( $shop_isle_categories ) {
 			foreach ( $shop_isle_categories as $shop_isle_category ) {
-				$shop_isleoutput .= '<a href="' . esc_url( get_category_link( $shop_isle_category->term_id ) ) . '" title="' . esc_attr( sprintf(
-					/* translators: s: category name */
-					__( 'View all posts in %s', 'shop-isle' ), $shop_isle_category->name
-				) ) . '">' . esc_html( $shop_isle_category->cat_name ) . '</a>' . $separator;
+				$shop_isleoutput .= '<a href="' . esc_url( get_category_link( $shop_isle_category->term_id ) ) . '" title="' . esc_attr(
+					sprintf(
+						/* translators: s: category name */
+						 __( 'View all posts in %s', 'shop-isle' ), $shop_isle_category->name
+					)
+				) . '">' . esc_html( $shop_isle_category->cat_name ) . '</a>' . $separator;
 			}
 			echo trim( $shop_isleoutput, $separator );
 		}

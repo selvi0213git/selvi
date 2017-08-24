@@ -15,10 +15,12 @@ add_filter( 'image_size_names_choose', 'shop_isle_media_uploader_custom_sizes' )
  * @return array
  */
 function shop_isle_media_uploader_custom_sizes( $sizes ) {
-	return array_merge( $sizes, array(
-		'shop_isle_banner_homepage'		=> esc_html__( 'Banners section', 'shop-isle' ),
-		'shop_isle_category_thumbnail'	=> esc_html__( 'Categories Section', 'shop-isle' ),
-	) );
+	return array_merge(
+		$sizes, array(
+			'shop_isle_banner_homepage'     => esc_html__( 'Banners section', 'shop-isle' ),
+			'shop_isle_category_thumbnail'  => esc_html__( 'Categories Section', 'shop-isle' ),
+		)
+	);
 }
 
 
@@ -28,6 +30,12 @@ function shop_isle_media_uploader_custom_sizes( $sizes ) {
  * Enqueue styles, register widget regions, etc.
  */
 require get_template_directory() . '/inc/functions/setup.php';
+
+/**
+ * Setup.
+ * Enqueue styles, register widget regions, etc.
+ */
+require get_template_directory() . '/inc/page-builder-extras.php';
 
 /**
  * Structure.
@@ -73,9 +81,11 @@ if ( is_woocommerce_activated() ) {
  * Move the coupon fild and message info after the order table
  **/
 function shop_isle_coupon_after_order_table_js() {
-	wc_enqueue_js( '
+	wc_enqueue_js(
+		'
 		$( $( ".woocommerce-info, .checkout_coupon" ).detach() ).appendTo( "#shop-isle-checkout-coupon" );
-	');
+	'
+	);
 }
 add_action( 'woocommerce_before_checkout_form', 'shop_isle_coupon_after_order_table_js' );
 

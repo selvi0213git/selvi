@@ -106,6 +106,7 @@ if ( ! class_exists( 'Shopisle_Control_Upsell' ) ) :
 									</ul>
 									<# } #>
 			</div>
-		<?php }
+		<?php
+		}
 	}
 endif;

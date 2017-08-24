@@ -3044,8 +3044,8 @@ Single product page
 }
 
 .single-product .woocommerce-product-gallery .flex-control-thumbs li {
-	width: 31%;
 	display: inline-block;
+	width: 31%;
 	margin: 2px 3.5% 10px 0;
 }
 

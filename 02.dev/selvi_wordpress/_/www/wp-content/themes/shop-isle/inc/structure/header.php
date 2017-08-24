@@ -57,16 +57,20 @@ if ( ! function_exists( 'shop_isle_primary_navigation' ) ) {
 					<div class="header-menu-wrap">
 						<div class="collapse navbar-collapse" id="custom-collapse">
 
-							<?php wp_nav_menu( array(
-								'theme_location' => 'primary',
-								'container' => false,
-								'menu_class' => 'nav navbar-nav navbar-right',
-							) ); ?>
+							<?php
+							wp_nav_menu(
+								array(
+									'theme_location' => 'primary',
+									'container' => false,
+									'menu_class' => 'nav navbar-nav navbar-right',
+								)
+							);
+								?>
 
 						</div>
 					</div>
 
-					<?php if ( class_exists( 'WooCommerce' ) ) :  ?>
+					<?php if ( class_exists( 'WooCommerce' ) ) : ?>
 						<div class="navbar-cart">
 
 							<div class="header-search">
@@ -80,7 +84,7 @@ if ( ! function_exists( 'shop_isle_primary_navigation' ) ) {
 								</div>
 							</div>
 
-							<?php if ( function_exists( 'WC' ) ) :  ?>
+							<?php if ( function_exists( 'WC' ) ) : ?>
 								<div class="navbar-cart-inner">
 									<a href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart','shop-isle' ); ?>" class="cart-contents">
 										<span class="icon-basket"></span>

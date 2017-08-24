@@ -92,92 +92,92 @@ msgstr ""
 msgid "Checkout Page"
 msgstr ""
 
-#: functions.php:193
+#: functions.php:204
 msgid "Main sidebar"
 msgstr ""
 
-#: functions.php:195
+#: functions.php:206
 msgid "Add widgets here for posts or pages."
 msgstr ""
 
-#: functions.php:203
+#: functions.php:214
 msgid "Widget area after content"
 msgstr ""
 
-#: functions.php:205
+#: functions.php:216
 msgid "Add widgets here for after posts or pages."
 msgstr ""
 
-#: functions.php:213
+#: functions.php:224
 msgid "Before footer widget area 1"
 msgstr ""
 
-#: functions.php:215
+#: functions.php:226
 msgid "Add widgets here for before footer widget area 1."
 msgstr ""
 
-#: functions.php:223
+#: functions.php:234
 msgid "Before footer widget area 2"
 msgstr ""
 
-#: functions.php:225
+#: functions.php:236
 msgid "Add widgets here for before footer widget area 2."
 msgstr ""
 
-#: functions.php:233
+#: functions.php:244
 msgid "Before footer widget area 3"
 msgstr ""
 
-#: functions.php:235
+#: functions.php:246
 msgid "Add widgets here for before footer widget area 3."
 msgstr ""
 
-#: functions.php:243
+#: functions.php:254
 msgid "Footer widget area 1"
 msgstr ""
 
-#: functions.php:245
+#: functions.php:256
 msgid "Add widgets here for footer widget area 1."
 msgstr ""
 
-#: functions.php:253
+#: functions.php:264
 msgid "Footer widget area 2"
 msgstr ""
 
-#: functions.php:255
+#: functions.php:266
 msgid "Add widgets here for footer widget area 2."
 msgstr ""
 
-#: functions.php:263
+#: functions.php:274
 msgid "Front Page widget area"
 msgstr ""
 
-#: functions.php:265
+#: functions.php:276
 msgid "Add widgets here for Front Page widget area."
 msgstr ""
 
-#: functions.php:273
+#: functions.php:284
 msgid "Service and Pricing widget area"
 msgstr ""
 
-#: functions.php:275
+#: functions.php:286
 msgid "Add Service and Pricing Widgets here, they appear in Front Page or Pricing Page Template."
 msgstr ""
 
-#: functions.php:284
+#: functions.php:295
 msgid "Sidebar for downloads"
 msgstr ""
 
-#: functions.php:286
+#: functions.php:297
 msgid "Add widgets here for downloads."
 msgstr ""
 
-#: functions.php:321
+#: functions.php:332
 msgctxt "Source Sans Pro font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:326
+#: functions.php:337
 msgctxt "Lora font: on or off"
 msgid "on"
 msgstr ""

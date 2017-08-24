@@ -19,14 +19,13 @@ if ( ! function_exists( 'shop_isle_cart_link' ) ) {
 		<a class="cart-contents" href="<?php echo esc_url( esc_url( WC()->cart->get_cart_url() ) ); ?>"
 		   title="<?php esc_attr_e( 'View your shopping cart', 'shop-isle' ); ?>">
 			<?php
-			echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?>
+			echo wp_kses_data( WC()->cart->get_cart_subtotal() );
+			?>
 			<span class="count">
 				<?php
 				echo wp_kses_data(
 					/* translators: d: number of items. */
-					sprintf( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'shop-isle' ),
-						WC()->cart->get_cart_contents_count()
-					)
+					sprintf( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count(), 'shop-isle' ), WC()->cart->get_cart_contents_count() )
 				);
 				?>
 			</span>

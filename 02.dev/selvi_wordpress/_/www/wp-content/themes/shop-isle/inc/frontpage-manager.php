@@ -17,16 +17,20 @@ function shop_isle_frontpage_manager_customize_register( $wp_customize ) {
 		/**
 		 * Option to get the frontpage settings to the old default template if a static frontpage is selected
 		 */
-		$wp_customize->add_setting( 'shop_isle_keep_old_fp_template', array(
-			'sanitize_callback' => 'shop_isle_sanitize_checkbox',
-		) );
+		$wp_customize->add_setting(
+			'shop_isle_keep_old_fp_template', array(
+				'sanitize_callback' => 'shop_isle_sanitize_checkbox',
+			)
+		);
 
-		$wp_customize->add_control( 'shop_isle_keep_old_fp_template', array(
-			'type'     => 'checkbox',
-			'label'    => esc_html__( 'Keep the old static frontpage template?', 'shop-isle' ),
-			'section'  => 'static_front_page',
-			'priority' => 10,
-		) );
+		$wp_customize->add_control(
+			'shop_isle_keep_old_fp_template', array(
+				'type'     => 'checkbox',
+				'label'    => esc_html__( 'Keep the old static frontpage template?', 'shop-isle' ),
+				'section'  => 'static_front_page',
+				'priority' => 10,
+			)
+		);
 	}
 }
 add_action( 'customize_register', 'shop_isle_frontpage_manager_customize_register' );

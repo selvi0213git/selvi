@@ -118,5 +118,6 @@ class Shopisle_Customizer_Upsell_Section extends WP_Customize_Section {
 								</ul>
 								<# } #>
 		</div>
-	<?php }
+	<?php
+	}
 }

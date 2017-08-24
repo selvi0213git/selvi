@@ -15,8 +15,8 @@
 		visibility: hidden;
 		transition: .3s;
 		transform: translateY(-150%);
-		@include media-breakpoint-up(lg) {
-			right: 55px;
+		@include media-breakpoint-up(md) {
+			left: 55px;
 		}
 	}
 	.site-header.search-active & {
@@ -34,7 +34,7 @@
 		cursor: pointer;
 		transition: .3s;
 		position: relative;
-		top: 3px;
+		top: 2px;
 		@include linear-icon;
 		&:before {
 			content: '\e86f';

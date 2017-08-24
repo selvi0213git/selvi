@@ -127,6 +127,28 @@ Custom color, pattern, or a beautiful image – the choice is yours. To change t
 
 == Changelog ==
 
+= 29 June 2017 =
+* Adding excerpt support for pages.
+
+= 23 June 2017 =
+* Removes social-icon widget borders and centers icons for both footer and sidebar widget areas
+* Fixing JetPack Social icon widget display, removes borders, and centers icons
+
+= 8 June 2017 =
+* Add JavaScript to fix aspect ratio issue in Video Widget. Add styles to fix list, too-long text issues in Text Widget.
+
+= 5 June 2017 =
+* Remove border-top of the list item if the widget is the Social Icons Widget.
+
+= 26 May 2017 =
+* Fix full width page separator size on large screens.
+
+= 22 May 2017 =
+* Improve contrast for menu-toggle.
+
+= 27 April 2017 =
+* Add support for Smarter Featured Images, off by default.
+
 = 24 April 2017 =
 * Update version number in preparation for .org submission
 * Move flush rewrite rules function to wpcom.php to avoid core requirement that the theme not try to add plugin functionality.

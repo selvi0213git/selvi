@@ -83,7 +83,7 @@ get_header(); ?>
 		<div class="row">
 
 			<!-- Content column start -->
-			<?php if ( ( function_exists( 'is_cart' ) && is_cart() ) || ( function_exists( 'is_checkout' ) && is_checkout() ) || ( function_exists( 'is_wc_endpoint_url' ) && is_wc_endpoint_url( 'lost-password' ) ) || ( function_exists( 'is_account_page' ) && is_account_page() ) ) :  ?>
+			<?php if ( ( function_exists( 'is_cart' ) && is_cart() ) || ( function_exists( 'is_checkout' ) && is_checkout() ) || ( function_exists( 'is_wc_endpoint_url' ) && is_wc_endpoint_url( 'lost-password' ) ) || ( function_exists( 'is_account_page' ) && is_account_page() ) ) : ?>
 			<div class="col-sm-12">
 				<?php else : ?>
 				<div class="col-sm-8">
@@ -94,9 +94,13 @@ get_header(); ?>
 					 *
 					 * @hooked woocommerce_breadcrumb - 10
 					 */
-					do_action( 'shop_isle_content_top' ); ?>
+					do_action( 'shop_isle_content_top' );
+					?>
 
-					<?php while ( have_posts() ) : the_post(); ?>
+					<?php
+					while ( have_posts() ) :
+						the_post();
+?>
 
 						<?php
 						do_action( 'shop_isle_page_before' );
@@ -113,13 +117,13 @@ get_header(); ?>
 						do_action( 'shop_isle_page_after' );
 						?>
 
-					<?php endwhile; // end of the loop. ?>
+					<?php endwhile; ?>
 
 				</div>
 				<!-- Content column end -->
 
 				<!-- Sidebar column start -->
-				<?php if ( ( function_exists( 'is_cart' ) && is_cart() ) || ( function_exists( 'is_checkout' ) && is_checkout() ) || ( function_exists( 'is_wc_endpoint_url' ) && is_wc_endpoint_url( 'lost-password' ) ) || ( function_exists( 'is_account_page' ) && is_account_page() ) ) :  ?>
+				<?php if ( ( function_exists( 'is_cart' ) && is_cart() ) || ( function_exists( 'is_checkout' ) && is_checkout() ) || ( function_exists( 'is_wc_endpoint_url' ) && is_wc_endpoint_url( 'lost-password' ) ) || ( function_exists( 'is_account_page' ) && is_account_page() ) ) : ?>
 				<?php else : ?>
 					<div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1 sidebar">
 

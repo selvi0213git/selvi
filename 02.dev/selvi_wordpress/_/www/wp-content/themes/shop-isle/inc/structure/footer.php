@@ -111,22 +111,12 @@ if ( ! function_exists( 'shop_isle_footer_copyright_and_socials' ) ) {
 
 							foreach ( $shop_isle_socials_decoded as $shop_isle_social ) :
 
-								if ( ! empty( $shop_isle_social->icon_value ) && ! empty( $shop_isle_social->link ) ) {
+								$icon_value = ! empty( $shop_isle_social->icon_value ) ? apply_filters( 'shop_isle_translate_single_string', $shop_isle_social->icon_value, 'Footer socials' ) : '';
+								$link = ! empty( $shop_isle_social->link ) ? apply_filters( 'shop_isle_translate_single_string', $shop_isle_social->link, 'Footer socials' ) : '';
 
-									if ( function_exists( 'icl_t' ) && ! empty( $shop_isle_social->id ) ) {
-
-										$shop_isle_social_icon_value = icl_t( 'Social ' . $shop_isle_social->id, 'Social icon', $shop_isle_social->icon_value );
-
-										$shop_isle_social_link = icl_t( 'Social ' . $shop_isle_social->id, 'Social link', $shop_isle_social->link );
-
-										echo '<a href="' . esc_url( $shop_isle_social_link ) . '"><span class="' . esc_attr( $shop_isle_social_icon_value ) . '"></span></a>';
-
-									} else {
-
-										echo '<a href="' . esc_url( $shop_isle_social->link ) . '"><span class="' . esc_attr( $shop_isle_social->icon_value ) . '"></span></a>';
-									}
+								if ( ! empty( $icon_value ) && ! empty( $link ) ) {
+									echo '<a href="' . esc_url( $link ) . '"><span class="' . esc_attr( $icon_value ) . '"></span></a>';
 								}
-
 									endforeach;
 
 								echo '</div>';

@@ -19,8 +19,8 @@ msgstr "Twenty Seventeen은 매혹적인 특성 이미지와 약간의 애니메
 msgid "Twenty Seventeen"
 msgstr "Twenty Seventeen"
 
-#: template-parts/header/site-branding.php:31
-#: template-parts/navigation/navigation-top.php:20
+#: template-parts/header/site-branding.php:34
+#: template-parts/navigation/navigation-top.php:27
 msgid "Scroll down to content"
 msgstr "콘텐츠로 스크롤해 내려가기"
 
@@ -39,21 +39,17 @@ msgctxt "Theme starter content"
 msgid "Espresso"
 msgstr "에스프레소"
 
-#: inc/custom-header.php:117
+#: inc/custom-header.php:119
 msgid "Pause background video"
 msgstr "배경 비디오 정지"
 
-#: inc/custom-header.php:116
+#: inc/custom-header.php:118
 msgid "Play background video"
 msgstr "배경 비디오 실행"
 
-#: inc/template-tags.php:154
+#: inc/template-tags.php:150
 msgid "Front Page Section %1$s Placeholder"
 msgstr "전면 페이지 영역 %1$s 플레이스홀더"
-
-#: inc/customizer.php:80
-msgid "When the two column layout is assigned, the page title is in one column and content is in the other."
-msgstr "두 개의 컬럼 레이아웃이 배정되면 페이지 타이틀은 하나의 컬럼에, 콘텐츠는 다른 컬럼에 나타납니다."
 
 #: single.php:32
 msgid "Next Post"
@@ -103,11 +99,11 @@ msgstr "드롭다운에서 각 영역에 특성화 할 페이지를 선택하세
 msgid "Front Page Section %d Content"
 msgstr "전면 페이지 영역 %d 콘텐츠"
 
-#: inc/customizer.php:83 inc/customizer.php:130
+#: inc/customizer.php:83 inc/customizer.php:132
 msgid "Two Column"
 msgstr "2 컬럼"
 
-#: inc/customizer.php:82 inc/customizer.php:129
+#: inc/customizer.php:82 inc/customizer.php:131
 msgid "One Column"
 msgstr "1 컬럼"
 
@@ -147,6 +143,9 @@ msgstr "푸터에 표시할 위젯을 여기에 추가하세요."
 msgid "Footer 1"
 msgstr "푸터 1"
 
+#. Translators: If there are characters in your language that are not supported
+#. by Libre Franklin, translate this to 'off'. Do not translate into your own
+#. language.
 #: functions.php:269
 msgctxt "Libre Franklin font: on or off"
 msgid "on"
@@ -189,17 +188,17 @@ msgstr "이전"
 msgid "Next"
 msgstr "다음"
 
-#: searchform.php:19
+#: searchform.php:20
 msgctxt "submit button"
 msgid "Search"
 msgstr "검색"
 
-#: searchform.php:18
+#: searchform.php:19
 msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr "검색 &hellip;"
 
-#: searchform.php:16
+#: searchform.php:17
 msgctxt "label"
 msgid "Search for:"
 msgstr "검색:"
@@ -209,12 +208,12 @@ msgid "Search Results for: %s"
 msgstr "결색 결과: %s"
 
 #. translators: %s: Name of current post
-#: functions.php:362 template-parts/page/content-front-page-panels.php:43
+#: functions.php:363 template-parts/page/content-front-page-panels.php:43
 #: template-parts/page/content-front-page.php:44
-#: template-parts/post/content-audio.php:82
-#: template-parts/post/content-gallery.php:68
-#: template-parts/post/content-image.php:58
-#: template-parts/post/content-video.php:80 template-parts/post/content.php:56
+#: template-parts/post/content-audio.php:83
+#: template-parts/post/content-gallery.php:70
+#: template-parts/post/content-image.php:59
+#: template-parts/post/content-video.php:82 template-parts/post/content.php:56
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "더 보기<span class=\"screen-reader-text\"> \"%s\"</span>"
 
@@ -227,19 +226,19 @@ msgid "Twenty Seventeen requires at least WordPress version 4.7. You are running
 msgstr "Twenty Seventeen은 최소한 워드프레스 4.7 버전이 필수입니다. 현재 %s 버전을 사용하고 있습니다. 업그레이드 후 다시 해주세요."
 
 #. translators: %s: Name of current post
-#: inc/template-tags.php:117
+#: inc/template-tags.php:116
 msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "편집<span class=\"screen-reader-text\"> \"%s\"</span>"
 
 #: template-parts/page/content-page.php:25
-#: template-parts/post/content-audio.php:87
-#: template-parts/post/content-gallery.php:73
-#: template-parts/post/content-image.php:63
-#: template-parts/post/content-video.php:85 template-parts/post/content.php:61
+#: template-parts/post/content-audio.php:88
+#: template-parts/post/content-gallery.php:75
+#: template-parts/post/content-image.php:64
+#: template-parts/post/content-video.php:87 template-parts/post/content.php:61
 msgid "Pages:"
 msgstr "페이지:"
 
-#: template-parts/navigation/navigation-top.php:13
+#: template-parts/navigation/navigation-top.php:17
 msgid "Menu"
 msgstr "메뉴"
 
@@ -247,21 +246,13 @@ msgstr "메뉴"
 msgid "Skip to content"
 msgstr "콘텐츠로 바로가기"
 
-#: functions.php:445
+#: functions.php:446
 msgid "Collapse child menu"
 msgstr "자식메뉴 닫기"
 
-#: functions.php:444
+#: functions.php:445
 msgid "Expand child menu"
 msgstr "자식메뉴 펼치기"
-
-#: functions.php:317
-msgid "Add widgets here to appear in your sidebar."
-msgstr "사이드바에 나타나도록 하려면 여기에 위젯을 추가하세요."
-
-#: functions.php:315
-msgid "Sidebar"
-msgstr "사이드바"
 
 #: functions.php:64 functions.php:194
 msgid "Social Links Menu"
@@ -271,7 +262,7 @@ msgstr "소셜 링크 메뉴"
 msgid "Proudly powered by %s"
 msgstr "Proudly powered by %s"
 
-#. #-#-#-#-#  twentyseventeen.pot (Twenty Seventeen 1.2)  #-#-#-#-#
+#. #-#-#-#-#  twentyseventeen.pot (Twenty Seventeen 1.3)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: template-parts/footer/site-info.php:13
 msgid "https://wordpress.org/"

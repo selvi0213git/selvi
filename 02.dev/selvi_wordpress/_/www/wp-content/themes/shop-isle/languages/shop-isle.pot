@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: ShopIsle PRO 2.2.16\n"
+"Project-Id-Version: ShopIsle PRO 2.2.18\n"
 "Report-Msgid-Bugs-To: https://github.com/Codeinwp/shop-isle-pro/issues\n"
-"POT-Creation-Date: 2017-05-05 14:19:42+00:00\n"
+"POT-Creation-Date: 2017-08-21 14:48:39+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,33 +24,35 @@ msgstr ""
 "X-Poedit-Bookmarks: \n"
 "X-Textdomain-Support: yes\n"
 
-#: 404.php:28 inc/customizer/features/feature-404-controls.php:32
+#: 404.php:28 inc/customizer/features/feature-404-controls.php:39
 msgid "Error 404"
 msgstr ""
 
-#: 404.php:45 inc/customizer/features/feature-404-controls.php:72
+#: 404.php:45 inc/customizer/features/feature-404-controls.php:91
 msgid "Back to home page"
 msgstr ""
 
-#: archive.php:96 home.php:125
-#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:77
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:49
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:56
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:63
-#: inc/functions/setup.php:347 inc/functions/setup.php:354
-#: inc/functions/setup.php:361 inc/sections/shop_isle_big_title_section.php:22
-#: inc/sections/shop_isle_slider_section.php:27
-#: inc/sections/shop_isle_slider_section.php:34
-#: inc/sections/shop_isle_slider_section.php:41 index.php:129
-#: template-blog.php:125
+#: archive.php:96 home.php:127
+#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:96
+#: inc/customizer/features/feature-frontpage-slider-section-controls.php:55
+#: inc/customizer/features/feature-frontpage-slider-section-controls.php:62
+#: inc/customizer/features/feature-frontpage-slider-section-controls.php:69
+#: inc/functions/extras.php:188 inc/functions/extras.php:195
+#: inc/functions/extras.php:202 inc/functions/setup.php:373
+#: inc/functions/setup.php:380 inc/functions/setup.php:387
+#: inc/sections/shop_isle_big_title_section.php:27
+#: inc/sections/shop_isle_slider_section.php:29
+#: inc/sections/shop_isle_slider_section.php:36
+#: inc/sections/shop_isle_slider_section.php:43 index.php:131
+#: template-blog.php:127
 msgid "Read more"
 msgstr ""
 
-#: archive.php:108 home.php:137 index.php:141 template-blog.php:137
+#: archive.php:108 home.php:139 index.php:143 template-blog.php:139
 msgid "<span class=\"meta-nav\">&laquo;</span> Older posts"
 msgstr ""
 
-#: archive.php:109 home.php:138 index.php:142 template-blog.php:138
+#: archive.php:109 home.php:140 index.php:144 template-blog.php:140
 msgid "Newer posts <span class=\"meta-nav\">&raquo;</span>"
 msgstr ""
 
@@ -397,19 +399,19 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: comments.php:36 comments.php:54
+#: comments.php:45 comments.php:65
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:37 comments.php:55
+#: comments.php:46 comments.php:66
 msgid "&larr; Older Comments"
 msgstr ""
 
-#: comments.php:38 comments.php:56
+#: comments.php:47 comments.php:67
 msgid "Newer Comments &rarr;"
 msgstr ""
 
-#: comments.php:63
+#: comments.php:74
 msgid "Comments are closed."
 msgstr ""
 
@@ -417,28 +419,28 @@ msgstr ""
 msgid "Nothing Found"
 msgstr ""
 
-#: content-none.php:21
+#: content-none.php:23
 #. translators: 1: link to new post page
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: content-none.php:25
+#: content-none.php:30
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: content-none.php:30
+#: content-none.php:35
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
 
-#: header.php:33
+#: header.php:35
 msgid "Loading..."
 msgstr ""
 
-#: home.php:31 inc/customizer/features/feature-blog-header-controls.php:16
+#: home.php:31 inc/customizer/features/feature-blog-header-controls.php:17
 msgid "Blog"
 msgstr ""
 
@@ -456,8 +458,8 @@ msgstr ""
 
 #: inc/customizer/class/class-shopisle-aboutus-page-instructions.php:20
 #: inc/customizer/class/class-shopisle-contact-page-instructions.php:21
-#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:123
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:123
+#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:133
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:133
 #. translators: 1: Link to documentation page. 2: 'doc'
 #. translators: 1: Link to documentation
 #. translators: 1: Link to documentation page. 2: 'doc'
@@ -466,8 +468,8 @@ msgstr ""
 
 #: inc/customizer/class/class-shopisle-aboutus-page-instructions.php:20
 #: inc/customizer/class/class-shopisle-contact-page-instructions.php:21
-#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:126
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:125
+#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:136
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:136
 #. translators: s: 'doc'
 msgid "doc"
 msgstr ""
@@ -479,70 +481,72 @@ msgid ""
 "that page in the browser and press \"Customize\" in the top bar."
 msgstr ""
 
-#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:86
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:86
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:86
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:47
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:54
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:61
-#: inc/functions/setup.php:345 inc/functions/setup.php:352
-#: inc/functions/setup.php:359 inc/sections/shop_isle_slider_section.php:25
-#: inc/sections/shop_isle_slider_section.php:32
-#: inc/sections/shop_isle_slider_section.php:39
-msgid "Shop Isle"
-msgstr ""
-
 #: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:88
 #: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:88
 #: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:88
-#: inc/customizer/functions.php:37
+#: inc/customizer/features/feature-frontpage-slider-section-controls.php:53
+#: inc/customizer/features/feature-frontpage-slider-section-controls.php:60
+#: inc/customizer/features/feature-frontpage-slider-section-controls.php:67
+#: inc/functions/extras.php:186 inc/functions/extras.php:193
+#: inc/functions/extras.php:200 inc/functions/setup.php:371
+#: inc/functions/setup.php:378 inc/functions/setup.php:385
+#: inc/sections/shop_isle_slider_section.php:27
+#: inc/sections/shop_isle_slider_section.php:34
+#: inc/sections/shop_isle_slider_section.php:41
+msgid "Shop Isle"
+msgstr ""
+
+#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:90
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:90
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:90
+#: inc/customizer/functions.php:38
 msgid "Documentation"
 msgstr ""
 
-#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:96
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:96
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:96
-#: inc/customizer/features/customizer-theme-info.php:42 inc/init.php:20
+#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:102
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:102
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:102
+#: inc/customizer/features/customizer-theme-info.php:47 inc/init.php:21
 msgid "Categories Section"
-msgstr ""
-
-#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:97
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:97
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:97
-#: inc/customizer/features/customizer-theme-info.php:39
-msgid "Map Section"
-msgstr ""
-
-#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:98
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:98
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:98
-msgid "Ribbon Section"
-msgstr ""
-
-#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:99
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:99
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:99
-#: inc/customizer/features/customizer-theme-info.php:40
-msgid "Services Section"
-msgstr ""
-
-#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:100
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:100
-#: inc/customizer/features/customizer-theme-info.php:38
-msgid "Add New Sections"
 msgstr ""
 
 #: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:103
 #: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:103
 #: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:103
-#: inc/customizer/features/customizer-theme-info.php:20
-#: inc/customizer/features/customizer-theme-info.php:50
-#: inc/customizer/features/customizer-theme-info.php:66
+#: inc/customizer/features/customizer-theme-info.php:44
+msgid "Map Section"
+msgstr ""
+
+#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:104
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:104
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:104
+msgid "Ribbon Section"
+msgstr ""
+
+#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:105
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:105
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:105
+#: inc/customizer/features/customizer-theme-info.php:45
+msgid "Services Section"
+msgstr ""
+
+#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:106
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:106
+#: inc/customizer/features/customizer-theme-info.php:43
+msgid "Add New Sections"
+msgstr ""
+
+#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:109
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:109
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:109
+#: inc/customizer/features/customizer-theme-info.php:21
+#: inc/customizer/features/customizer-theme-info.php:55
+#: inc/customizer/features/customizer-theme-info.php:77
 msgid "View PRO version"
 msgstr ""
 
-#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:114
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:114
+#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:124
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:124
 #. translators: 1: The static front page customizer section link
 #. translators: 1: Link to static front page customizer control
 msgid ""
@@ -551,10 +555,10 @@ msgid ""
 "page you previously created."
 msgstr ""
 
-#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:119
-#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:143
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:117
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:119
+#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:129
+#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:157
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:127
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:129
 #. translators: 1: Link to customizer control 2: 'Need further informations?
 #. Check this'
 #. translators: 1: Link to static front page customizer control 2: 'Static
@@ -562,8 +566,8 @@ msgstr ""
 msgid "Static Front Page"
 msgstr ""
 
-#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:139
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:112
+#: inc/customizer/customize-pro/class-shopisle-customizer-upsell.php:153
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-lite-customize-upsell.php:122
 #. translators: 1: Link to customizer control 2: 'Static front Page'
 #. translators: 1: Link to static front page customizer control
 msgid ""
@@ -571,7 +575,7 @@ msgid ""
 "Latest Posts\"."
 msgstr ""
 
-#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:100
+#: inc/customizer/customize-pro/lite-pro-upsells/class-shopisle-wporg-customize-upsell.php:106
 msgid "Shortcodes Section"
 msgstr ""
 
@@ -587,22 +591,22 @@ msgstr ""
 #: inc/customizer/customizer-repeater/class/customizer-repeater-control.php:200
 #: inc/customizer/customizer-repeater/class/customizer-repeater-control.php:273
 #: inc/customizer/customizer-repeater/class/customizer-repeater-control.php:279
-#: inc/customizer/features/feature-404-controls.php:37
-#: inc/customizer/features/feature-about-us-controls.php:50
-#: inc/customizer/features/feature-about-us-controls.php:158
-#: inc/customizer/features/feature-about-us-controls.php:230
-#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:57
-#: inc/customizer/features/feature-frontpage-services-section-controls.php:41
-#: inc/customizer/features/feature-frontpage-video-section-controls.php:42
+#: inc/customizer/features/feature-404-controls.php:46
+#: inc/customizer/features/feature-about-us-controls.php:59
+#: inc/customizer/features/feature-about-us-controls.php:195
+#: inc/customizer/features/feature-about-us-controls.php:289
+#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:70
+#: inc/customizer/features/feature-frontpage-services-section-controls.php:50
+#: inc/customizer/features/feature-frontpage-video-section-controls.php:51
 msgid "Title"
 msgstr ""
 
 #: inc/customizer/customizer-repeater/class/customizer-repeater-control.php:206
 #: inc/customizer/customizer-repeater/class/customizer-repeater-control.php:286
-#: inc/customizer/features/feature-about-us-controls.php:64
-#: inc/customizer/features/feature-about-us-controls.php:172
-#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:69
-#: inc/customizer/features/feature-frontpage-services-section-controls.php:51
+#: inc/customizer/features/feature-about-us-controls.php:77
+#: inc/customizer/features/feature-about-us-controls.php:213
+#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:86
+#: inc/customizer/features/feature-frontpage-services-section-controls.php:64
 msgid "Subtitle"
 msgstr ""
 
@@ -610,9 +614,9 @@ msgstr ""
 #: inc/customizer/customizer-repeater/class/customizer-repeater-control.php:292
 #: inc/customizer/customizer-repeater/class/customizer-repeater-control.php:403
 #: inc/customizer/customizer-repeater/class/customizer-repeater-control.php:421
-#: inc/customizer/features/feature-404-controls.php:64
-#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:93
-#: inc/customizer/features/feature-frontpage-ribbon-section-controls.php:62
+#: inc/customizer/features/feature-404-controls.php:81
+#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:118
+#: inc/customizer/features/feature-frontpage-ribbon-section-controls.php:79
 msgid "Button link"
 msgstr ""
 
@@ -623,7 +627,7 @@ msgstr ""
 
 #: inc/customizer/customizer-repeater/class/customizer-repeater-control.php:226
 #: inc/customizer/customizer-repeater/class/customizer-repeater-control.php:304
-#: inc/sections/shop_isle_shortcodes_section.php:22
+#: inc/sections/shop_isle_shortcodes_section.php:36
 msgid "Shortcode"
 msgstr ""
 
@@ -653,7 +657,7 @@ msgstr ""
 
 #: inc/customizer/customizer-repeater/class/customizer-repeater-control.php:365
 #: inc/customizer/customizer-repeater/class/customizer-repeater-control.php:380
-#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:45
+#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:53
 msgid "Image"
 msgstr ""
 
@@ -670,7 +674,7 @@ msgid "None"
 msgstr ""
 
 #: inc/customizer/customizer-repeater/class/customizer-repeater-control.php:389
-#: inc/sections/shop_isle_services_section.php:21
+#: inc/functions/extras.php:230 inc/sections/shop_isle_services_section.php:22
 msgid "Social icons"
 msgstr ""
 
@@ -679,7 +683,7 @@ msgstr ""
 msgid "Add icon"
 msgstr ""
 
-#: inc/customizer/customizer.php:30
+#: inc/customizer/customizer.php:31
 msgid "Frontpage sections"
 msgstr ""
 
@@ -688,51 +692,51 @@ msgid "ShopIsle Pro"
 msgstr ""
 
 #: inc/customizer/features/customizer-manager-pro.php:30
-#: inc/customizer/features/customizer-manager-pro.php:67
+#: inc/customizer/features/customizer-manager-pro.php:69
 msgid "&copy; Themeisle, All rights reserved"
 msgstr ""
 
-#: inc/customizer/features/customizer-theme-info.php:35
+#: inc/customizer/features/customizer-theme-info.php:40
 msgid "Enhanced Cart"
 msgstr ""
 
-#: inc/customizer/features/customizer-theme-info.php:36
+#: inc/customizer/features/customizer-theme-info.php:41
 msgid "Get full color schemes support for your site. "
 msgstr ""
 
-#: inc/customizer/features/customizer-theme-info.php:37
+#: inc/customizer/features/customizer-theme-info.php:42
 msgid "Section Reordering"
 msgstr ""
 
-#: inc/customizer/features/customizer-theme-info.php:41
+#: inc/customizer/features/customizer-theme-info.php:46
 msgid "Quick View functionality"
 msgstr ""
 
-#: inc/customizer/features/customizer-theme-info.php:43
-#: inc/customizer/functions.php:38
+#: inc/customizer/features/customizer-theme-info.php:48
+#: inc/customizer/functions.php:39
 msgid "Support"
 msgstr ""
 
-#: inc/customizer/features/customizer-theme-info.php:62
+#: inc/customizer/features/customizer-theme-info.php:73
 msgid "Three New Color Schemes"
 msgstr ""
 
-#: inc/customizer/features/feature-404-controls.php:24
-#: inc/customizer/features/feature-frontpage-ribbon-section-controls.php:74
+#: inc/customizer/features/feature-404-controls.php:28
+#: inc/customizer/features/feature-frontpage-ribbon-section-controls.php:96
 msgid "Background image"
 msgstr ""
 
-#: inc/customizer/features/feature-404-controls.php:45
+#: inc/customizer/features/feature-404-controls.php:56
 msgid "The requested URL was not found on this server.<br> That is all we know."
 msgstr ""
 
-#: inc/customizer/features/feature-404-controls.php:51
-#: inc/customizer/features/feature-frontpage-ribbon-section-controls.php:41
+#: inc/customizer/features/feature-404-controls.php:64
+#: inc/customizer/features/feature-frontpage-ribbon-section-controls.php:50
 msgid "Text"
 msgstr ""
 
-#: inc/customizer/features/feature-404-controls.php:77
-#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:81
+#: inc/customizer/features/feature-404-controls.php:98
+#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:102
 msgid "Button label"
 msgstr ""
 
@@ -740,146 +744,152 @@ msgstr ""
 msgid "About us page"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:28
+#: inc/customizer/features/feature-about-us-controls.php:31
 msgid "Our team"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:36
+#: inc/customizer/features/feature-about-us-controls.php:41
 msgid "About us page - our team"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:45
-#: template-about.php:104
+#: inc/customizer/features/feature-about-us-controls.php:52
+#: template-about.php:77
 msgid "Meet our team"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:59
-#: template-about.php:105
+#: inc/customizer/features/feature-about-us-controls.php:70
+#: template-about.php:78
 msgid "An awesome way to introduce the members of your team."
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:102
-#: inc/customizer/features/feature-about-us-controls.php:114
+#: inc/customizer/features/feature-about-us-controls.php:122
+#: inc/customizer/features/feature-about-us-controls.php:134
 msgid "Add new team member"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:113
+#: inc/customizer/features/feature-about-us-controls.php:133
 msgid "Team member"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:136
-#: inc/customizer/features/feature-about-us-controls.php:199
+#: inc/customizer/features/feature-about-us-controls.php:167
+#: inc/customizer/features/feature-about-us-controls.php:250
 msgid "Video"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:144
+#: inc/customizer/features/feature-about-us-controls.php:177
 msgid "About us page - video"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:153
-#: template-about.php:284
+#: inc/customizer/features/feature-about-us-controls.php:188
+#: template-about.php:209
 msgid "Presentation"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:167
-#: template-about.php:285
+#: inc/customizer/features/feature-about-us-controls.php:206
+#: template-about.php:210
 msgid "What the video about our new products"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:186
+#: inc/customizer/features/feature-about-us-controls.php:232
 msgid "Background"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:208
-#: inc/customizer/features/feature-about-us-controls.php:225
-#: template-about.php:313
+#: inc/customizer/features/feature-about-us-controls.php:261
+#: inc/customizer/features/feature-about-us-controls.php:282
+#: template-about.php:231
 msgid "Our advantages"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:216
+#: inc/customizer/features/feature-about-us-controls.php:271
 msgid "About us page - our advantages"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:243
-#: inc/functions/setup.php:501 inc/sections/shop_isle_services_section.php:22
-#: template-about.php:325
+#: inc/customizer/features/feature-about-us-controls.php:305
+#: inc/functions/extras.php:231 inc/functions/extras.php:288
+#: inc/functions/setup.php:543 inc/sections/shop_isle_services_section.php:23
+#: template-about.php:245
 msgid "Ideas and concepts"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:244
-#: inc/customizer/features/feature-about-us-controls.php:249
-#: inc/customizer/features/feature-about-us-controls.php:254
-#: inc/customizer/features/feature-about-us-controls.php:259
-#: inc/functions/setup.php:502 inc/functions/setup.php:507
-#: inc/functions/setup.php:512 inc/functions/setup.php:517
-#: template-about.php:326 template-about.php:331 template-about.php:336
-#: template-about.php:341
+#: inc/customizer/features/feature-about-us-controls.php:306
+#: inc/customizer/features/feature-about-us-controls.php:311
+#: inc/customizer/features/feature-about-us-controls.php:316
+#: inc/customizer/features/feature-about-us-controls.php:321
+#: inc/functions/extras.php:289 inc/functions/extras.php:294
+#: inc/functions/extras.php:299 inc/functions/extras.php:304
+#: inc/functions/setup.php:544 inc/functions/setup.php:549
+#: inc/functions/setup.php:554 inc/functions/setup.php:559
+#: template-about.php:246 template-about.php:251 template-about.php:256
+#: template-about.php:261
 msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:248
-#: inc/functions/setup.php:506 template-about.php:330
+#: inc/customizer/features/feature-about-us-controls.php:310
+#: inc/functions/extras.php:293 inc/functions/setup.php:548
+#: template-about.php:250
 msgid "Designs & interfaces"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:253
-#: inc/functions/setup.php:511 inc/sections/shop_isle_services_section.php:33
-#: template-about.php:335
+#: inc/customizer/features/feature-about-us-controls.php:315
+#: inc/functions/extras.php:242 inc/functions/extras.php:298
+#: inc/functions/setup.php:553 inc/sections/shop_isle_services_section.php:34
+#: template-about.php:255
 msgid "Highly customizable"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:258
-#: inc/functions/setup.php:516 inc/sections/shop_isle_services_section.php:34
-#: template-about.php:340
+#: inc/customizer/features/feature-about-us-controls.php:320
+#: inc/functions/extras.php:243 inc/functions/extras.php:303
+#: inc/functions/setup.php:558 inc/sections/shop_isle_services_section.php:35
+#: template-about.php:260
 msgid "Easy to use"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:265
-#: inc/customizer/features/feature-about-us-controls.php:277
+#: inc/customizer/features/feature-about-us-controls.php:331
+#: inc/customizer/features/feature-about-us-controls.php:343
 msgid "Add new advantage"
 msgstr ""
 
-#: inc/customizer/features/feature-about-us-controls.php:276
+#: inc/customizer/features/feature-about-us-controls.php:342
 msgid "Advantage"
 msgstr ""
 
-#: inc/customizer/features/feature-advanced-controls.php:17
+#: inc/customizer/features/feature-advanced-controls.php:18
 msgid "Advanced options"
 msgstr ""
 
-#: inc/customizer/features/feature-advanced-controls.php:29
+#: inc/customizer/features/feature-advanced-controls.php:34
 msgid "Disable preloader?"
 msgstr ""
 
-#: inc/customizer/features/feature-blog-header-controls.php:21
+#: inc/customizer/features/feature-blog-header-controls.php:24
 msgid "Blog header title"
 msgstr ""
 
-#: inc/customizer/features/feature-blog-header-controls.php:32
+#: inc/customizer/features/feature-blog-header-controls.php:39
 msgid "Blog header subtitle"
 msgstr ""
 
-#: inc/customizer/features/feature-colors-palette.php:26
+#: inc/customizer/features/feature-colors-palette.php:30
 msgid "Change the color scheme"
 msgstr ""
 
-#: inc/customizer/features/feature-colors-palette.php:39
+#: inc/customizer/features/feature-colors-palette.php:49
 msgid "Navbar Background"
 msgstr ""
 
-#: inc/customizer/features/feature-colors-palette.php:50
+#: inc/customizer/features/feature-colors-palette.php:66
 msgid "Menu Items"
 msgstr ""
 
-#: inc/customizer/features/feature-colors-palette.php:61
+#: inc/customizer/features/feature-colors-palette.php:83
 msgid "Menu Items on Hover"
 msgstr ""
 
-#: inc/customizer/features/feature-colors-palette.php:72
+#: inc/customizer/features/feature-colors-palette.php:100
 msgid "Footer Background"
 msgstr ""
 
-#: inc/customizer/features/feature-colors-palette.php:85
+#: inc/customizer/features/feature-colors-palette.php:119
 msgid "Padding"
 msgstr ""
 
@@ -887,138 +897,140 @@ msgstr ""
 msgid "Contact page"
 msgstr ""
 
-#: inc/customizer/features/feature-contact-controls.php:28
+#: inc/customizer/features/feature-contact-controls.php:33
 msgid "Contact form shortcode"
 msgstr ""
 
-#: inc/customizer/features/feature-contact-controls.php:31
+#: inc/customizer/features/feature-contact-controls.php:36
 #. translators: 1: Link to Pirate Forms Plugin.
 msgid ""
 "Create a form, copy the shortcode generated and paste it here. We recommend "
 "%1$s but you can use any plugin you like."
 msgstr ""
 
-#: inc/customizer/features/feature-contact-controls.php:48
-#: inc/customizer/features/feature-frontpage-map-section-controls.php:39
+#: inc/customizer/features/feature-contact-controls.php:58
+#: inc/customizer/features/feature-frontpage-map-section-controls.php:48
 #. translators: 1: 'Simple Contact Form Plugin - PirateForms'
 msgid "Map shortcode"
 msgstr ""
 
-#: inc/customizer/features/feature-contact-controls.php:49
+#: inc/customizer/features/feature-contact-controls.php:59
 msgid ""
 "To use this section please install <a "
 "href=\"https://wordpress.org/plugins/intergeo-maps/\">Intergeo Maps</a> "
 "plugin then use it to create a map and paste here the shortcode generated"
 msgstr ""
 
-#: inc/customizer/features/feature-footer-controls.php:17
+#: inc/customizer/features/feature-footer-controls.php:18
 msgid "Footer"
 msgstr ""
 
-#: inc/customizer/features/feature-footer-controls.php:28
+#: inc/customizer/features/feature-footer-controls.php:33
 msgid "Copyright"
 msgstr ""
 
-#: inc/customizer/features/feature-footer-controls.php:43
+#: inc/customizer/features/feature-footer-controls.php:51
 msgid "Hide site info?"
 msgstr ""
 
-#: inc/customizer/features/feature-footer-controls.php:56
 #: inc/customizer/features/feature-footer-controls.php:68
+#: inc/customizer/features/feature-footer-controls.php:80
 msgid "Add new social"
 msgstr ""
 
-#: inc/customizer/features/feature-footer-controls.php:67
+#: inc/customizer/features/feature-footer-controls.php:79
 msgid "Social"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-banners-section-controls.php:17
-#: inc/init.php:19
+#: inc/customizer/features/feature-frontpage-banners-section-controls.php:18
+#: inc/init.php:20
 msgid "Banners section"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-banners-section-controls.php:31
+#: inc/customizer/features/feature-frontpage-banners-section-controls.php:35
 msgid "Hide banners section?"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-banners-section-controls.php:43
-#: inc/customizer/features/feature-frontpage-categories-section-controls.php:43
-#: inc/customizer/features/feature-frontpage-products-section-controls.php:56
-#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:76
+#: inc/customizer/features/feature-frontpage-banners-section-controls.php:50
+#: inc/customizer/features/feature-frontpage-categories-section-controls.php:52
+#: inc/customizer/features/feature-frontpage-products-section-controls.php:69
+#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:89
 msgid "Section title"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-banners-section-controls.php:68
-#: inc/customizer/features/feature-frontpage-banners-section-controls.php:80
+#: inc/customizer/features/feature-frontpage-banners-section-controls.php:82
+#: inc/customizer/features/feature-frontpage-banners-section-controls.php:94
 msgid "Add new banner"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-banners-section-controls.php:79
+#: inc/customizer/features/feature-frontpage-banners-section-controls.php:93
 msgid "Banner"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:17
+#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:18
 msgid "Big title section"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:32
+#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:36
 msgid "Hide big title section?"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:65
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:48
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:55
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:62
-#: inc/functions/setup.php:346 inc/functions/setup.php:353
-#: inc/functions/setup.php:360 inc/sections/shop_isle_big_title_section.php:21
-#: inc/sections/shop_isle_slider_section.php:26
-#: inc/sections/shop_isle_slider_section.php:33
-#: inc/sections/shop_isle_slider_section.php:40
+#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:80
+#: inc/customizer/features/feature-frontpage-slider-section-controls.php:54
+#: inc/customizer/features/feature-frontpage-slider-section-controls.php:61
+#: inc/customizer/features/feature-frontpage-slider-section-controls.php:68
+#: inc/functions/extras.php:187 inc/functions/extras.php:194
+#: inc/functions/extras.php:201 inc/functions/setup.php:372
+#: inc/functions/setup.php:379 inc/functions/setup.php:386
+#: inc/sections/shop_isle_big_title_section.php:26
+#: inc/sections/shop_isle_slider_section.php:28
+#: inc/sections/shop_isle_slider_section.php:35
+#: inc/sections/shop_isle_slider_section.php:42
 msgid "WooCommerce Theme"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:89
-#: inc/sections/shop_isle_big_title_section.php:23
+#: inc/customizer/features/feature-frontpage-big-title-section-controls.php:112
+#: inc/sections/shop_isle_big_title_section.php:28
 msgid "#"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-categories-section-controls.php:19
+#: inc/customizer/features/feature-frontpage-categories-section-controls.php:20
 msgid "Categories section"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-categories-section-controls.php:31
+#: inc/customizer/features/feature-frontpage-categories-section-controls.php:36
 msgid "Hide categories section?"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-categories-section-controls.php:38
+#: inc/customizer/features/feature-frontpage-categories-section-controls.php:45
 #: inc/sections/shop_isle_fp_categories_section.php:9
 msgid "Popular categories"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-categories-section-controls.php:53
-#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:89
+#: inc/customizer/features/feature-frontpage-categories-section-controls.php:66
+#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:106
 msgid "Section subtitle"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-categories-section-controls.php:83
+#: inc/customizer/features/feature-frontpage-categories-section-controls.php:101
 msgid ""
 "Hold down the Ctrl (windows) / Command (Mac) button to select multiple "
 "options."
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-map-section-controls.php:17
+#: inc/customizer/features/feature-frontpage-map-section-controls.php:18
 msgid "Map section"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-map-section-controls.php:29
+#: inc/customizer/features/feature-frontpage-map-section-controls.php:34
 msgid "Hide map section?"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-map-section-controls.php:40
+#: inc/customizer/features/feature-frontpage-map-section-controls.php:49
 msgid "To use this section please install "
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-map-section-controls.php:40
+#: inc/customizer/features/feature-frontpage-map-section-controls.php:49
 msgid " plugin then use it to create a map and paste here the shortcode generated"
 msgstr ""
 
@@ -1028,189 +1040,189 @@ msgstr ""
 msgid "To use this section, you are required to first install the  %1$s plugin"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-products-section-controls.php:24
-#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:23
-#: inc/sections/shop_isle_services_section.php:27
+#: inc/customizer/features/feature-frontpage-products-section-controls.php:28
+#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:27
+#: inc/functions/extras.php:236 inc/sections/shop_isle_services_section.php:28
 #. translators: 1: Link to WiooCommerce Plugin. 2: 'WooCommerce'
 msgid "WooCommerce"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-products-section-controls.php:31
+#: inc/customizer/features/feature-frontpage-products-section-controls.php:36
 msgid "Products section"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-products-section-controls.php:43
+#: inc/customizer/features/feature-frontpage-products-section-controls.php:52
 msgid "Hide products section?"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-products-section-controls.php:52
+#: inc/customizer/features/feature-frontpage-products-section-controls.php:63
 #: inc/sections/shop_isle_products_section.php:21
 msgid "Latest products"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-products-section-controls.php:67
+#: inc/customizer/features/feature-frontpage-products-section-controls.php:84
 msgid "WooCommerce shortcode"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-products-section-controls.php:69
+#: inc/customizer/features/feature-frontpage-products-section-controls.php:86
 msgid "Insert a WooCommerce shortcode"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-products-section-controls.php:75
-#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:96
+#: inc/customizer/features/feature-frontpage-products-section-controls.php:93
+#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:114
 msgid "Select category"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-products-section-controls.php:99
-#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:122
+#: inc/customizer/features/feature-frontpage-products-section-controls.php:122
+#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:144
 msgid "Products category"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-products-section-controls.php:100
+#: inc/customizer/features/feature-frontpage-products-section-controls.php:123
 msgid ""
 "OR pick a product category. If no shortcode or no category is selected , "
 "WooCommerce latest products are displaying."
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:31
+#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:36
 msgid "Products slider section"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:46
+#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:54
 msgid "Hide products slider section on frontpage?"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:62
+#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:72
 msgid "Hide products slider section on single product page?"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:72
+#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:83
 #: inc/sections/shop_isle_products_slider_section.php:21
-#: inc/woocommerce/functions.php:333
+#: inc/woocommerce/functions.php:337
 msgid "Exclusive products"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:85
-#: inc/woocommerce/functions.php:334
+#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:100
+#: inc/woocommerce/functions.php:338
 msgid "Special category of products"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:126
+#: inc/customizer/features/feature-frontpage-products-slider-section-controls.php:148
 msgid ""
 "If no category is selected , WooCommerce products from the first category "
 "found are displaying."
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-ribbon-section-controls.php:17
+#: inc/customizer/features/feature-frontpage-ribbon-section-controls.php:18
 msgid "Ribbon section"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-ribbon-section-controls.php:29
+#: inc/customizer/features/feature-frontpage-ribbon-section-controls.php:34
 msgid "Hide ribbon section?"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-ribbon-section-controls.php:36
+#: inc/customizer/features/feature-frontpage-ribbon-section-controls.php:43
 #: inc/sections/shop_isle_ribbon_section.php:13
 msgid "Find out more"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-ribbon-section-controls.php:47
+#: inc/customizer/features/feature-frontpage-ribbon-section-controls.php:58
 #: inc/sections/shop_isle_ribbon_section.php:14
 msgid "Click to subscribe"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-ribbon-section-controls.php:52
+#: inc/customizer/features/feature-frontpage-ribbon-section-controls.php:65
 msgid "Button Text"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-services-section-controls.php:17
+#: inc/customizer/features/feature-frontpage-services-section-controls.php:18
 msgid "Services section"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-services-section-controls.php:29
+#: inc/customizer/features/feature-frontpage-services-section-controls.php:34
 msgid "Hide services section?"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-services-section-controls.php:36
+#: inc/customizer/features/feature-frontpage-services-section-controls.php:43
 #: inc/sections/shop_isle_services_section.php:13
-#: inc/sections/shop_isle_services_section.php:43
-#: inc/sections/shop_isle_services_section.php:148
+#: inc/sections/shop_isle_services_section.php:44
+#: inc/sections/shop_isle_services_section.php:124
 msgid "Our Services"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-services-section-controls.php:81
-#: inc/customizer/features/feature-frontpage-services-section-controls.php:89
+#: inc/customizer/features/feature-frontpage-services-section-controls.php:101
+#: inc/customizer/features/feature-frontpage-services-section-controls.php:109
 msgid "Add new service box"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-services-section-controls.php:88
+#: inc/customizer/features/feature-frontpage-services-section-controls.php:108
 msgid "Service box"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-shortcodes-section-controls.php:17
+#: inc/customizer/features/feature-frontpage-shortcodes-section-controls.php:18
 msgid "Shortcodes section"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-shortcodes-section-controls.php:29
+#: inc/customizer/features/feature-frontpage-shortcodes-section-controls.php:34
 msgid "Hide shortcodes section?"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-shortcodes-section-controls.php:36
+#: inc/customizer/features/feature-frontpage-shortcodes-section-controls.php:44
 msgid "Edit the shortcode options"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:20
+#: inc/customizer/features/feature-frontpage-slider-section-controls.php:21
 msgid "Slider section"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:34
+#: inc/customizer/features/feature-frontpage-slider-section-controls.php:38
 msgid "Hide slider section?"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:70
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:81
+#: inc/customizer/features/feature-frontpage-slider-section-controls.php:79
+#: inc/customizer/features/feature-frontpage-slider-section-controls.php:90
 msgid "Add new slide"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:80
+#: inc/customizer/features/feature-frontpage-slider-section-controls.php:89
 msgid "Slide"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:90
+#: inc/customizer/features/feature-frontpage-video-section-controls.php:18
+msgid "Video section"
+msgstr ""
+
+#: inc/customizer/features/feature-frontpage-video-section-controls.php:35
+msgid "Hide video section?"
+msgstr ""
+
+#: inc/customizer/features/feature-frontpage-video-section-controls.php:66
+msgid "Youtube link"
+msgstr ""
+
+#: inc/customizer/features/feature-frontpage-video-section-controls.php:82
+msgid "Video thumbnail"
+msgstr ""
+
+#: inc/customizer/features/feature-header-controls.php:18
+msgid "Header"
+msgstr ""
+
+#: inc/customizer/features/feature-header-controls.php:34
+msgid "Logo"
+msgstr ""
+
+#: inc/customizer/features/feature-slider-shortcode.php:23
 msgid "Slider shortcode"
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-slider-section-controls.php:91
+#: inc/customizer/features/feature-slider-shortcode.php:24
 msgid ""
 "You can replace the homepage slider with any plugin you like, just copy the "
 "shortcode generated and paste it here."
 msgstr ""
 
-#: inc/customizer/features/feature-frontpage-video-section-controls.php:17
-msgid "Video section"
-msgstr ""
-
-#: inc/customizer/features/feature-frontpage-video-section-controls.php:30
-msgid "Hide video section?"
-msgstr ""
-
-#: inc/customizer/features/feature-frontpage-video-section-controls.php:53
-msgid "Youtube link"
-msgstr ""
-
-#: inc/customizer/features/feature-frontpage-video-section-controls.php:64
-msgid "Video thumbnail"
-msgstr ""
-
-#: inc/customizer/features/feature-header-controls.php:17
-msgid "Header"
-msgstr ""
-
-#: inc/customizer/features/feature-header-controls.php:28
-msgid "Logo"
-msgstr ""
-
-#: inc/customizer/features/flag-wporg.php:33 inc/functions/setup.php:130
+#: inc/customizer/features/flag-wporg.php:34 inc/functions/setup.php:134
 msgid "Primary Menu"
 msgstr ""
 
@@ -1218,35 +1230,40 @@ msgstr ""
 msgid "Header description"
 msgstr ""
 
-#: inc/frontpage-manager.php:26
+#: inc/frontpage-manager.php:29
 msgid "Keep the old static frontpage template?"
 msgstr ""
 
-#: inc/functions/setup.php:188
+#: inc/functions/extras.php:237 inc/sections/shop_isle_services_section.php:29
+#: inc/structure/template-tags.php:135
+msgid "Top Rated Products"
+msgstr ""
+
+#: inc/functions/setup.php:202
 msgid "Sidebar"
 msgstr ""
 
-#: inc/functions/setup.php:197
+#: inc/functions/setup.php:213
 msgid "Footer area 1"
 msgstr ""
 
-#: inc/functions/setup.php:206
+#: inc/functions/setup.php:224
 msgid "Footer area 2"
 msgstr ""
 
-#: inc/functions/setup.php:215
+#: inc/functions/setup.php:235
 msgid "Footer area 3"
 msgstr ""
 
-#: inc/functions/setup.php:224
+#: inc/functions/setup.php:246
 msgid "Footer area 4"
 msgstr ""
 
-#: inc/functions/setup.php:233
+#: inc/functions/setup.php:257
 msgid "Sidebar Shop Page"
 msgstr ""
 
-#: inc/init.php:105 inc/structure/header.php:85
+#: inc/init.php:115 inc/structure/header.php:89
 #: inc/woocommerce/template-tags.php:20
 msgid "View your shopping cart"
 msgstr ""
@@ -1260,7 +1277,7 @@ msgstr ""
 #: inc/sections/shop_isle_products_section.php:308
 #: inc/sections/shop_isle_products_slider_section.php:145
 #: inc/sections/shop_isle_products_slider_section.php:218
-#: inc/woocommerce/functions.php:668
+#: inc/woocommerce/functions.php:674
 msgid "Out of Stock"
 msgstr ""
 
@@ -1289,21 +1306,16 @@ msgid ""
 "Frontpage sections -> Products slider section"
 msgstr ""
 
-#: inc/sections/shop_isle_services_section.php:28
-#: inc/structure/template-tags.php:128
-msgid "Top Rated Products"
-msgstr ""
-
-#: inc/structure/comments.php:44
+#: inc/structure/comments.php:45
 #. translators: s: Comment author link
 msgid "<cite class=\"fn\">%s</cite>"
 msgstr ""
 
-#: inc/structure/comments.php:47
+#: inc/structure/comments.php:49
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: inc/structure/comments.php:68
+#: inc/structure/comments.php:76
 msgid "Edit"
 msgstr ""
 
@@ -1315,7 +1327,7 @@ msgstr ""
 msgid "Toggle navigation"
 msgstr ""
 
-#: inc/structure/page.php:21 inc/structure/post.php:46
+#: inc/structure/page.php:22 inc/structure/post.php:47
 msgid "Pages:"
 msgstr ""
 
@@ -1324,72 +1336,72 @@ msgstr ""
 msgid "Continue reading %s"
 msgstr ""
 
-#: inc/structure/post.php:53
+#: inc/structure/post.php:55
 msgid ", "
 msgstr ""
 
-#: inc/structure/post.php:57
+#: inc/structure/post.php:59
 #. translators: s: post title
 msgid "Tagged %1$s"
 msgstr ""
 
-#: inc/structure/post.php:90
+#: inc/structure/post.php:92
 msgid "Posts navigation"
 msgstr ""
 
-#: inc/structure/post.php:93
+#: inc/structure/post.php:95
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr ""
 
-#: inc/structure/post.php:96
+#: inc/structure/post.php:98
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: inc/structure/post.php:125
+#: inc/structure/post.php:127
 msgid "By "
 msgstr ""
 
-#: inc/structure/post.php:144
+#: inc/structure/post.php:147
 msgid "No Comments"
 msgstr ""
 
-#: inc/structure/post.php:146
+#: inc/structure/post.php:149
 msgid " Comments"
 msgstr ""
 
-#: inc/structure/post.php:148
+#: inc/structure/post.php:151
 msgid "1 Comment"
 msgstr ""
 
-#: inc/structure/post.php:161
+#: inc/structure/post.php:165
 #. translators: s: category name
 msgid "View all posts in %s"
 msgstr ""
 
-#: inc/structure/template-tags.php:27
+#: inc/structure/template-tags.php:28
 msgid "Product Categories"
 msgstr ""
 
-#: inc/structure/template-tags.php:60
+#: inc/structure/template-tags.php:63
 msgid "Recent Products"
 msgstr ""
 
-#: inc/structure/template-tags.php:95
+#: inc/structure/template-tags.php:100
 msgid "Featured Products"
 msgstr ""
 
-#: inc/structure/template-tags.php:161
+#: inc/structure/template-tags.php:170
 msgid "On Sale"
 msgstr ""
 
-#: inc/woocommerce/template-tags.php:27
+#: inc/woocommerce/template-tags.php:28
 #. translators: d: number of items.
 msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: search.php:28
+#: search.php:30
 #. translators: s: Search term.
 msgid "Search Results for: %s"
 msgstr ""
@@ -1438,6 +1450,14 @@ msgstr ""
 msgid "Full width"
 msgstr ""
 
+#. Template Name of the plugin/theme
+msgid "Page Builder Blank"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Page Builder Full Width"
+msgstr ""
+
 #: class-tgm-plugin-activation.php:1121 class-tgm-plugin-activation.php:2948
 msgctxt "plugin A *and* plugin B"
 msgid "and"
@@ -1462,25 +1482,25 @@ msgctxt "as in: \"version nr unknown\""
 msgid "unknown"
 msgstr ""
 
-#: comments.php:29
-#. translators: 1: number of comments 2: post name
+#: comments.php:30
+#. translators: 1: number of comments, 2: post title
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/structure/header.php:76
+#: inc/structure/header.php:80
 msgctxt "placeholder"
 msgid "Search Products&hellip;"
 msgstr ""
 
-#: inc/structure/header.php:76
+#: inc/structure/header.php:80
 msgctxt "label"
 msgid "Search for:"
 msgstr ""
 
-#: inc/structure/header.php:77
+#: inc/structure/header.php:81
 msgctxt "submit button"
 msgid "Search"
 msgstr ""

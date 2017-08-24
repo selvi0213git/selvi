@@ -51,11 +51,13 @@ if ( ! function_exists( 'shop_isle_shop_page_wrapper' ) ) {
 		<section class="module-small module-small-shop">
 				<div class="container">
 
-				<?php if ( is_shop() || is_product_tag() || is_product_category() ) :
+				<?php
+				if ( is_shop() || is_product_tag() || is_product_category() ) :
 
 						do_action( 'shop_isle_before_shop' );
 
-					if ( is_active_sidebar( 'shop-isle-sidebar-shop-archive' ) ) : ?>
+					if ( is_active_sidebar( 'shop-isle-sidebar-shop-archive' ) ) :
+					?>
 
 							<div class="col-sm-9 shop-with-sidebar" id="shop-isle-blog-container">
 
@@ -105,7 +107,7 @@ if ( ! function_exists( 'shop_isle_shop_page_wrapper_end' ) ) {
 	function shop_isle_shop_page_wrapper_end() {
 		?>
 
-			<?php if ( (is_shop() || is_product_category() || is_product_tag() ) && is_active_sidebar( 'shop-isle-sidebar-shop-archive' ) ) :  ?>
+			<?php if ( (is_shop() || is_product_category() || is_product_tag() ) && is_active_sidebar( 'shop-isle-sidebar-shop-archive' ) ) : ?>
 
 				</div>
 
@@ -193,10 +195,12 @@ function shop_isle_woocommerce_scripts() {
  * @return  array $args related products args.
  */
 function shop_isle_related_products_args( $args ) {
-	$args = apply_filters( 'shop_isle_related_products_args', array(
-		'posts_per_page' => 4,
-		'columns'        => 4,
-	) );
+	$args = apply_filters(
+		'shop_isle_related_products_args', array(
+			'posts_per_page' => 4,
+			'columns'        => 4,
+		)
+	);
 
 	return $args;
 }
@@ -368,8 +372,8 @@ function shop_isle_products_slider_on_single_page() {
 		}
 
 		$shop_isle_products_slider_args = array(
-				'post_type' => 'product',
-				'posts_per_page' => 10,
+			'post_type' => 'product',
+			'posts_per_page' => 10,
 		);
 
 		if ( ! empty( $shop_isle_products_slider_category ) && ($shop_isle_products_slider_category != '-') ) {
@@ -580,10 +584,12 @@ if ( ! function_exists( 'shop_isle_loop_product_thumbnail' ) ) {
 
 				$props = wc_get_product_attachment_props( get_post_thumbnail_id(), $product );
 				$product_id = get_the_ID();
-				echo get_the_post_thumbnail( $product_id, $image_size, array(
-					'title'	 => $props['title'],
-					'alt'    => $props['alt'],
-				));
+				echo get_the_post_thumbnail(
+					$product_id, $image_size, array(
+						'title'  => $props['title'],
+						'alt'    => $props['alt'],
+					)
+				);
 			}
 
 			if ( ! empty( $shop_isle_gallery_attachment_ids[0] ) ) :

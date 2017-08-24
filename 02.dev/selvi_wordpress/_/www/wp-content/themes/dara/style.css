@@ -2,7 +2,7 @@
 Theme Name: Dara
 Theme URI: https://wordpress.com/themes/dara/
 Description: With bold featured images and bright, cheerful colors, Dara is ready to get to work for your business.
-Version: 1.0.7
+Version: 1.0.9
 Author: Automattic
 Author URI: http://wordpress.com/themes/
 License: GNU General Public License v2 or later
@@ -861,6 +861,7 @@ textarea {
 .widget {
 	font-size: 16px;
 	margin-bottom: 2.4em;
+	word-wrap: break-word;
 }
 .widget a {
 	transition: color 0.2s;
@@ -870,23 +871,23 @@ textarea {
 	margin-bottom: 0.8em;
 	text-align: center;
 }
-.widget ul,
-.widget ol {
+.widget:not(.widget_text) ul,
+.widget:not(.widget_text) ol {
 	list-style: none;
 	margin: 0;
 }
-.widget ul > li,
-.widget ol > li {
+.widget:not(.widget_text) ul > li,
+.widget:not(.widget_text) ol > li {
 	padding: 0.8em 0;
 }
-.widget li > ul,
-.widget li > ol {
+.widget:not(.widget_text) li > ul,
+.widget:not(.widget_text) li > ol {
 	margin-left: 1.6em;
 }
-.widget ul ul {
+.widget:not(.widget_text) ul ul {
 	margin-top: 0.8em;
 }
-.widget ul ul > li:last-child {
+.widget:not(.widget_text) ul ul > li:last-child {
 	padding-bottom: 0;
 }
 .widget select {
@@ -923,6 +924,14 @@ textarea {
 .widget_calendar td a {
 	font-weight: bold;
 }
+.widget-area .jetpack_widget_social_icons .jetpack-social-widget-list,
+#secondary.widget-area .jetpack_widget_social_icons .jetpack-social-widget-list {
+	text-align: center;
+}
+.widget-area .jetpack_widget_social_icons .jetpack-social-widget-list > .jetpack-social-widget-item,
+#secondary.widget-area .jetpack_widget_social_icons .jetpack-social-widget-list > .jetpack-social-widget-item {
+	border-top: none;
+}
 
 /* Footer Widgets */
 .footer-widget-area {
@@ -949,8 +958,8 @@ textarea {
 .footer-widget-area .widget-title {
 	color: #444340;
 }
-.footer-widget-area .widget ul > li,
-.footer-widget-area .widget ol > li {
+.footer-widget-area .widget:not(.widget_text) ul > li,
+.footer-widget-area .widget:not(.widget_text) ol > li {
 	border-top: 1px solid #e5e5e5;
 }
 .footer-widget-area .widget_calendar table,
@@ -2518,9 +2527,6 @@ video {
 	.no-sidebar.page .content-wrapper.without-featured-image,
 	.no-sidebar.post-type-archive-jetpack-testimonial .content-wrapper.without-featured-image {
 		padding-left: 55px;
-	}
-	.content-wrapper.full-width .hentry:after {
-		width: 1180px;
 	}
 	.entry-thumbnail {
 		min-height: 80px;

@@ -1,4 +1,19 @@
 
+### 2.2.19 - 21/08/2017
+**Changes:** 
+- Fixed issue with repeater translations looping with Polylang
+
+### 2.2.18 - 07/08/2017
+**Changes:** 
+- Added page builder templates
+- Added compatibility with Beaver Themer plugin
+- Fixed compatibility issues with WPML
+
+### 2.2.17 - 22/05/2017
+**Changes:** 
+- Added a Shortcode option in Customizer to allow replacing the default slider with a custom one
+- Integration with Nivo Slider Lite
+
 ### 2.2.16 - 09/05/2017
 **Changes:** 
 - Fixed transport issues with the copyright option

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress.com - Themes - Dara package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-02-27 15:00:29+0000\n"
+"PO-Revision-Date: 2017-06-28 15:32:18+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,14 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: sv_SE\n"
 "Project-Id-Version: WordPress.com - Themes - Dara\n"
+
+#: inc/wpcom-colors.php:66
+msgid "Links"
+msgstr "Länkar"
+
+#: inc/wpcom-colors.php:21
+msgid "Headings"
+msgstr "Rubriker"
 
 #. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:57
@@ -20,6 +28,11 @@ msgstr "Taggad"
 #: wp-content/themes/pub/dara/templates/grid-page.php
 msgid "Grid Page"
 msgstr "Rutnätssida"
+
+#. Template Name of the plugin/theme
+#: wp-content/themes/pub/dara/templates/full-width-page.php
+msgid "Full Width, No Sidebar"
+msgstr "Full bredd, ingen sidopanel"
 
 #: single.php:20
 msgid "Next post"

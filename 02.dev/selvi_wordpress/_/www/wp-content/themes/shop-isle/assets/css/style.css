@@ -5841,3 +5841,55 @@ WP Show Posts
 	clear: left;
 	width: 100%;
 }
+
+/* Nivo slider basic styling */
+.nivo-controlNav {
+	position: relative;
+	text-align: center;
+}
+.nivo-controlNav a,
+.nivo-directionNav a {
+	margin: 0 10px;
+	padding: 5px 10px;
+	opacity: 0.85;
+	color: #fff;
+	background-color: rgba(10, 10, 10, 0.9);
+	cursor: pointer;
+	-webkit-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+
+.nivo-controlNav a.active {
+	color: #333;
+	background: #fff;
+}
+
+.nivo-controlNav a:hover,
+.nivo-directionNav a:hover {
+	opacity: 1;
+}
+
+.nivo-directionNav {
+	position: relative;
+	z-index: 1000;
+	bottom: 40px;
+	width: 100%;
+}
+
+.nivo-directionNav .nivo-prevNav {
+	float: left;
+}
+
+.nivo-directionNav .nivo-prevNav:before {
+	content: "\00AB ";
+}
+
+.nivo-directionNav .nivo-nextNav {
+	float: right;
+}
+
+.nivo-directionNav .nivo-nextNav:after {
+	content: " \00BB";
+}
+
+/* END Nivo slider basic styling */

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress.com - Themes - Dara package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-03-08 16:03:38+0000\n"
+"PO-Revision-Date: 2017-03-23 06:48:12+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,10 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: pl\n"
 "Project-Id-Version: WordPress.com - Themes - Dara\n"
+
+#: inc/wpcom-colors.php:66
+msgid "Links"
+msgstr "Linki"
 
 #. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:57

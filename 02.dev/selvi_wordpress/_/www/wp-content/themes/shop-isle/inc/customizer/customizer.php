@@ -25,10 +25,12 @@ function shop_isle_customize_register( $wp_customize ) {
 
 	/* Sections Customizing */
 
-	$wp_customize->add_panel( 'shop_isle_front_page_sections', array(
-		'priority' => 42,
-		'title'    => esc_html__( 'Frontpage sections', 'shop-isle' ),
-	) );
+	$wp_customize->add_panel(
+		'shop_isle_front_page_sections', array(
+			'priority' => 42,
+			'title'    => esc_html__( 'Frontpage sections', 'shop-isle' ),
+		)
+	);
 }
 /**
  * Repeater Sanitization function

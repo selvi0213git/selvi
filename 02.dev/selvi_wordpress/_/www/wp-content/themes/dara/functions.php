@@ -88,6 +88,9 @@ function dara_setup() {
 			'flex-height' => true,
 		)
 	);
+
+	// Add theme support for excerpts on pages
+	add_post_type_support( 'page', 'excerpt' );
 }
 endif;
 add_action( 'after_setup_theme', 'dara_setup' );
@@ -221,6 +224,11 @@ function dara_scripts() {
 		wp_enqueue_script( 'dara-slider', get_template_directory_uri() . '/assets/js/slider.js', array( 'flexslider' ), '20161220', true );
 	}
 
+	// If there's an active Video widget, and it's (hopefully) in the footer widget area
+	if ( is_active_widget( '','', 'media_video' ) && ( is_active_sidebar( 'sidebar-2' ) || is_active_sidebar( 'sidebar-3' ) || is_active_sidebar( 'sidebar-4' ) ) ) {
+		wp_enqueue_script( 'dara-video', get_template_directory_uri() . '/assets/js/video-widget.js', array( 'jquery' ), '20170608', true );
+	}
+
 	wp_enqueue_script( 'dara-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -285,3 +293,7 @@ require get_template_directory() . '/inc/woocommerce.php';
 
 
 
+/**
+ * Load plugin enhancement file to display admin notices.
+ */
+require get_template_directory() . '/inc/plugin-enhancements.php';

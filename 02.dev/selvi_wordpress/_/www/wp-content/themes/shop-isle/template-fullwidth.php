@@ -70,9 +70,13 @@ get_header(); ?>
 					 *
 					 * @hooked woocommerce_breadcrumb - 10
 					 */
-					do_action( 'shop_isle_content_top' ); ?>
+					do_action( 'shop_isle_content_top' );
+					?>
 
-					<?php while ( have_posts() ) : the_post(); ?>
+					<?php
+					while ( have_posts() ) :
+						the_post();
+?>
 
 						<?php
 						do_action( 'shop_isle_page_before' );
@@ -89,7 +93,7 @@ get_header(); ?>
 						do_action( 'shop_isle_page_after' );
 						?>
 
-					<?php endwhile; // end of the loop. ?>
+					<?php endwhile; ?>
 					
 					</div>
 					

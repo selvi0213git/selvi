@@ -32,12 +32,14 @@ if ( ! function_exists( 'shop_isle_customizer_script' ) ) {
 
 		wp_enqueue_script( 'shop_isle_customizer_script', get_template_directory_uri() . '/js/shop_isle_customizer.js', array( 'jquery' ),'', true );
 
-		wp_localize_script( 'shop_isle_customizer_script', 'objectL10n', array(
+		wp_localize_script(
+			'shop_isle_customizer_script', 'objectL10n', array(
 
-			'documentation' => __( 'Documentation', 'shop-isle' ),
-			'support' 				=> __( 'Support','shop-isle' ),
+				'documentation' => __( 'Documentation', 'shop-isle' ),
+				'support'               => __( 'Support','shop-isle' ),
 
-		) );
+			)
+		);
 
 	}
 }
@@ -113,7 +115,7 @@ if ( ! function_exists( 'shop_isle_sanitize_array' ) ) {
 	 */
 	function shop_isle_sanitize_array( $input ) {
 
-		return ( is_array( $input ) ? $input  : array( 'none' ) );
+		return ( is_array( $input ) ? $input : array( 'none' ) );
 
 	}
 }

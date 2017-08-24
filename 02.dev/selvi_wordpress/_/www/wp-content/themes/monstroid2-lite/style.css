@@ -5,7 +5,7 @@ Theme URI: https://www.templatemonster.com/wordpress-themes/59560.html
 Author: Template Monster
 Author URI: http://www.templatemonster.com/
 Description: Monstroid2 Lite is an awesome theme designed for blogging. It has pixel perfect typography, content oriented design and great set of options allowing to get maximum control over your site look and feel. Besides that great set of widgets is on board. Monstroid2 Lite is a free version of Monstroid2 - another great GPL WordPress theme for business, e-commerce and online publishing.
-Version: 1.0.6
+Version: 1.0.7
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: monstroid2-lite
@@ -2150,9 +2150,9 @@ textarea {
     -webkit-transform: translateY(-150%);
         -ms-transform: translateY(-150%);
             transform: translateY(-150%); }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       .site-header .search-form {
-        right: 55px; } }
+        left: 55px; } }
   .site-header.search-active .search-form {
     opacity: 1;
     visibility: visible;
@@ -2168,7 +2168,7 @@ textarea {
     -webkit-transition: .3s;
             transition: .3s;
     position: relative;
-    top: 3px;
+    top: 2px;
     font-family: 'Linearicons-Free';
     speak: none;
     font-style: normal;

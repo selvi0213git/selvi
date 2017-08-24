@@ -152,7 +152,7 @@
 
 		function navbarSubmenu(width) {
 			if (width > 767) {
-				$('.navbar-custom .navbar-nav > li.menu-item-has-children').hover(function() {
+				$('.navbar-custom .navbar-nav > li.menu-item-has-children').on('click mouseover', function() {
 					var MenuLeftOffset  = $('.sub-menu', $(this)).offset().left;
 					var Menu1LevelWidth = $('.sub-menu', $(this)).width();
 					if (width - MenuLeftOffset < Menu1LevelWidth * 2) {

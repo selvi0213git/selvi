@@ -18,29 +18,33 @@ if ( ! empty( $shop_isle_homepage_slider_shortcode ) ) {
 	echo do_shortcode( $shop_isle_homepage_slider_shortcode );
 } else {
 
-	$shop_isle_slider = get_theme_mod( 'shop_isle_slider', json_encode( array(
-		array(
-			'image_url' => get_template_directory_uri() . '/assets/images/slide1.jpg',
-			'link'      => '#',
-			'text'      => __( 'Shop Isle', 'shop-isle' ),
-			'subtext'   => __( 'WooCommerce Theme', 'shop-isle' ),
-			'label'     => __( 'Read more', 'shop-isle' ),
-		),
-		array(
-			'image_url' => get_template_directory_uri() . '/assets/images/slide2.jpg',
-			'link'      => '#',
-			'text'      => __( 'Shop Isle', 'shop-isle' ),
-			'subtext'   => __( 'WooCommerce Theme', 'shop-isle' ),
-			'label'     => __( 'Read more', 'shop-isle' ),
-		),
-		array(
-			'image_url' => get_template_directory_uri() . '/assets/images/slide3.jpg',
-			'link'      => '#',
-			'text'      => __( 'Shop Isle', 'shop-isle' ),
-			'subtext'   => __( 'WooCommerce Theme', 'shop-isle' ),
-			'label'     => __( 'Read more', 'shop-isle' ),
-		),
-	) ) );
+	$shop_isle_slider = get_theme_mod(
+		'shop_isle_slider', json_encode(
+			array(
+				array(
+					'image_url' => get_template_directory_uri() . '/assets/images/slide1.jpg',
+					'link'      => '#',
+					'text'      => __( 'Shop Isle', 'shop-isle' ),
+					'subtext'   => __( 'WooCommerce Theme', 'shop-isle' ),
+					'label'     => __( 'Read more', 'shop-isle' ),
+				),
+				array(
+					'image_url' => get_template_directory_uri() . '/assets/images/slide2.jpg',
+					'link'      => '#',
+					'text'      => __( 'Shop Isle', 'shop-isle' ),
+					'subtext'   => __( 'WooCommerce Theme', 'shop-isle' ),
+					'label'     => __( 'Read more', 'shop-isle' ),
+				),
+				array(
+					'image_url' => get_template_directory_uri() . '/assets/images/slide3.jpg',
+					'link'      => '#',
+					'text'      => __( 'Shop Isle', 'shop-isle' ),
+					'subtext'   => __( 'WooCommerce Theme', 'shop-isle' ),
+					'label'     => __( 'Read more', 'shop-isle' ),
+				),
+			)
+		)
+	);
 
 	if ( ! empty( $shop_isle_slider ) ) {
 
@@ -54,45 +58,31 @@ if ( ! empty( $shop_isle_homepage_slider_shortcode ) ) {
 
 			foreach ( $shop_isle_slider_decoded as $shop_isle_slide ) {
 
-				if ( ! empty( $shop_isle_slide->image_url ) ) {
+				$image_url = ! empty( $shop_isle_slide->image_url ) ? apply_filters( 'shop_isle_translate_single_string', $shop_isle_slide->image_url, 'Slider section' ) : '';
+				$text = ! empty( $shop_isle_slide->text ) ? apply_filters( 'shop_isle_translate_single_string', $shop_isle_slide->text, 'Slider section' ) : '';
+				$subtext = ! empty( $shop_isle_slide->subtext ) ? apply_filters( 'shop_isle_translate_single_string', $shop_isle_slide->subtext, 'Slider section' ) : '';
+				$link = ! empty( $shop_isle_slide->link ) ? apply_filters( 'shop_isle_translate_single_string', $shop_isle_slide->link, 'Slider section' ) : '';
+				$label = ! empty( $shop_isle_slide->label ) ? apply_filters( 'shop_isle_translate_single_string', $shop_isle_slide->label, 'Slider section' ) : '';
 
-					if ( function_exists( 'icl_t' ) && ! empty( $shop_isle_slide->id ) ) {
-						$shop_isle_slider_image_url = icl_t( 'Slide ' . $shop_isle_slide->id, 'Slide image', $shop_isle_slide->image_url );
-						echo '<li class="bg-dark-30 bg-dark" style="background-image:url(' . esc_url( $shop_isle_slider_image_url ) . ')">';
-					} else {
-						echo '<li class="bg-dark-30 bg-dark" style="background-image:url(' . esc_url( $shop_isle_slide->image_url ) . ')">';
-					}
 
+				if ( ! empty( $image_url ) ) {
+
+					echo '<li class="bg-dark-30 bg-dark" style="background-image:url(' . esc_url( $image_url ) . ')">';
 					echo '<div class="hs-caption">';
 					echo '<div class="caption-content">';
 
-					if ( ! empty( $shop_isle_slide->text ) ) {
-						if ( function_exists( 'icl_t' ) && ! empty( $shop_isle_slide->id ) ) {
-							$shop_isle_slider_text = icl_t( 'Slide ' . $shop_isle_slide->id, 'Slide text', $shop_isle_slide->text );
-							echo '<div class="hs-title-size-4 font-alt mb-30">' . $shop_isle_slider_text . '</div>';
-						} else {
-							echo '<div class="hs-title-size-4 font-alt mb-30">' . $shop_isle_slide->text . '</div>';
-						}
+					if ( ! empty( $text ) ) {
+						echo '<div class="hs-title-size-4 font-alt mb-30">' . wp_kses_post( $text ) . '</div>';
 					}
 
-					if ( ! empty( $shop_isle_slide->subtext ) ) {
-						if ( function_exists( 'icl_t' ) && ! empty( $shop_isle_slide->id ) ) {
-							$shop_isle_slider_subtext = icl_t( 'Slide ' . $shop_isle_slide->id, 'Slide subtext', $shop_isle_slide->subtext );
-							echo '<div class="hs-title-size-1 font-alt mb-40">' . $shop_isle_slider_subtext . '</div>';
-						} else {
-							echo '<div class="hs-title-size-1 font-alt mb-40">' . $shop_isle_slide->subtext . '</div>';
-						}
+					if ( ! empty( $subtext ) ) {
+						echo '<div class="hs-title-size-1 font-alt mb-40">' . wp_kses_post( $subtext ) . '</div>';
 					}
 
-					if ( ! empty( $shop_isle_slide->link ) && ! empty( $shop_isle_slide->label ) ) {
-						if ( function_exists( 'icl_t' ) && ! empty( $shop_isle_slide->id ) ) {
-							$shop_isle_slider_link  = icl_t( 'Slide ' . $shop_isle_slide->id, 'Slide button link', $shop_isle_slide->link );
-							$shop_isle_slider_label = icl_t( 'Slide ' . $shop_isle_slide->id, 'Slide button label', $shop_isle_slide->label );
-							echo '<a href="' . esc_url( $shop_isle_slider_link ) . '" class="section-scroll btn btn-border-w btn-round">' . $shop_isle_slider_label . '</a>';
-						} else {
-							echo '<a href="' . esc_url( $shop_isle_slide->link ) . '" class="section-scroll btn btn-border-w btn-round">' . $shop_isle_slide->label . '</a>';
-						}
+					if ( ! empty( $link ) && ! empty( $label ) ) {
+						echo '<a href="' . esc_url( $link ) . '" class="section-scroll btn btn-border-w btn-round">' . wp_kses_post( $label ) . '</a>';
 					}
+
 					echo '</div>';
 					echo '</div>';
 					echo '</li>';

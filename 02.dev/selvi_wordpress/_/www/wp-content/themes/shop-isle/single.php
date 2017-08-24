@@ -20,7 +20,10 @@ get_header(); ?>
 					<!-- Content column start -->
 					<div class="col-sm-8">
 
-						<?php while ( have_posts() ) : the_post(); ?>
+						<?php
+						while ( have_posts() ) :
+							the_post();
+?>
 
 							<?php
 
@@ -36,7 +39,7 @@ get_header(); ?>
 							do_action( 'shop_isle_single_post_after' );
 							?>
 
-						<?php endwhile; // end of the loop. ?>
+						<?php endwhile; ?>
 
 					</div>
 					<!-- Content column end -->

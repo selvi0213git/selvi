@@ -56,7 +56,7 @@ if ( ( isset( $shop_isle_video_hide ) && $shop_isle_video_hide != 1 && ! empty( 
 	?>
 	<!-- Youtube player start-->
 	<div class="video-player"
-	     data-property="{videoURL:'<?php echo $shop_isle_yt_link; ?>', containment:'.module-video', startAt:0, mute:true, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
+		 data-property="{videoURL:'<?php echo $shop_isle_yt_link; ?>', containment:'.module-video', startAt:0, mute:true, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
 	<!-- Youtube player end -->
 	<?php
 	echo '</div>';

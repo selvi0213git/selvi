@@ -32,11 +32,13 @@ class ShopIsle_Info extends WP_Customize_Control {
 
 		<div class="shopisle-theme-info">
 			<?php
-			foreach ( $this->links as $item ) {  ?>
+			foreach ( $this->links as $item ) {
+			?>
 				<a href="<?php echo esc_url( $item['link'] ); ?>" target="_blank"><?php echo esc_html( $item['name'] ); ?></a>
 				<hr/>
 				<?php
-			} ?>
+			}
+			?>
 		</div>
 		<?php
 	}

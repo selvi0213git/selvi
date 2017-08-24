@@ -56,9 +56,11 @@ function dara_jetpack_setup() {
 			'author'     => '.byline',
 		),
 		'featured-images' => array(
-			'archive' => true, // enable or not the featured image check for archive pages: true or false
-			'post'    => true, // enable or not the featured image check for single posts: true or false
-			'page'    => true, // enable or not the featured image check for single pages: true or false
+			'archive'          => true, // enable or not the featured image check for archive pages: true or false
+			'post'             => true, // enable or not the featured image check for single posts: true or false
+			'page'             => true, // enable or not the featured image check for single pages: true or false
+			'fallback'         => true,
+			'fallback-default' => false,
 		),
 	) );
 
@@ -143,5 +145,18 @@ function dara_social_menu() {
 		return;
 	} else {
 		jetpack_social_menu();
+	}
+}
+
+
+/**
+ * Custom function to check for a post thumbnail;
+ * If Jetpack is not available, fall back to has_post_thumbnail()
+ */
+function dara_has_post_thumbnail( $post = null ) {
+	if ( function_exists( 'jetpack_has_featured_image' ) ) {
+		return jetpack_has_featured_image( $post );
+	} else {
+		return has_post_thumbnail( $post );
 	}
 }

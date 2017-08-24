@@ -55,7 +55,7 @@ class Shopisle_Customizer_Upsell_Text extends WP_Customize_Section {
 		?>
 
 		<li id="accordion-section-{{ data.id }}"
-		    class="accordion-section control-section control-section-{{ data.type }} cannot-expand">
+			class="accordion-section control-section control-section-{{ data.type }} cannot-expand">
 			<p class="frontpage-sections-upsell">
 				<#    if ( data.upsell_text ) { #>
 					{{{data.upsell_text}}}

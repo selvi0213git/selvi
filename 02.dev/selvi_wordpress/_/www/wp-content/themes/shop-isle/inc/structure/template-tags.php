@@ -19,13 +19,15 @@ if ( ! function_exists( 'shop_isle_product_categories' ) ) {
 
 		if ( is_woocommerce_activated() ) {
 
-			$args = apply_filters( 'shop_isle_product_categories_args', array(
-				'limit' 			=> 3,
-				'columns' 			=> 3,
-				'child_categories' 	=> 0,
-				'orderby' 			=> 'name',
-				'title'				=> __( 'Product Categories', 'shop-isle' ),
-			) );
+			$args = apply_filters(
+				'shop_isle_product_categories_args', array(
+					'limit'             => 3,
+					'columns'           => 3,
+					'child_categories'  => 0,
+					'orderby'           => 'name',
+					'title'             => __( 'Product Categories', 'shop-isle' ),
+				)
+			);
 
 			echo '<section class="shop-isle-product-section shop-isle-product-categories">';
 
@@ -54,11 +56,13 @@ if ( ! function_exists( 'shop_isle_recent_products' ) ) {
 
 		if ( is_woocommerce_activated() ) {
 
-			$args = apply_filters( 'shop_isle_recent_products_args', array(
-				'limit' 			=> 4,
-				'columns' 			=> 4,
-				'title'				=> __( 'Recent Products', 'shop-isle' ),
-			) );
+			$args = apply_filters(
+				'shop_isle_recent_products_args', array(
+					'limit'             => 4,
+					'columns'           => 4,
+					'title'             => __( 'Recent Products', 'shop-isle' ),
+				)
+			);
 
 			echo '<section class="shop-isle-product-section shop-isle-recent-products">';
 
@@ -87,13 +91,15 @@ if ( ! function_exists( 'shop_isle_featured_products' ) ) {
 
 		if ( is_woocommerce_activated() ) {
 
-			$args = apply_filters( 'shop_isle_featured_products_args', array(
-				'limit' 			=> 4,
-				'columns' 			=> 4,
-				'orderby'			=> 'date',
-				'order'				=> 'desc',
-				'title'				=> __( 'Featured Products', 'shop-isle' ),
-			) );
+			$args = apply_filters(
+				'shop_isle_featured_products_args', array(
+					'limit'             => 4,
+					'columns'           => 4,
+					'orderby'           => 'date',
+					'order'             => 'desc',
+					'title'             => __( 'Featured Products', 'shop-isle' ),
+				)
+			);
 
 			echo '<section class="shop-isle-product-section shop-isle-featured-products">';
 
@@ -122,11 +128,13 @@ if ( ! function_exists( 'shop_isle_popular_products' ) ) {
 
 		if ( is_woocommerce_activated() ) {
 
-			$args = apply_filters( 'shop_isle_popular_products_args', array(
-				'limit' 			=> 4,
-				'columns' 			=> 4,
-				'title'				=> __( 'Top Rated Products', 'shop-isle' ),
-			) );
+			$args = apply_filters(
+				'shop_isle_popular_products_args', array(
+					'limit'             => 4,
+					'columns'           => 4,
+					'title'             => __( 'Top Rated Products', 'shop-isle' ),
+				)
+			);
 
 			echo '<section class="shop-isle-product-section shop-isle-popular-products">';
 
@@ -155,11 +163,13 @@ if ( ! function_exists( 'shop_isle_on_sale_products' ) ) {
 
 		if ( is_woocommerce_activated() ) {
 
-			$args = apply_filters( 'shop_isle_on_sale_products_args', array(
-				'limit' 			=> 4,
-				'columns' 			=> 4,
-				'title'				=> __( 'On Sale', 'shop-isle' ),
-			) );
+			$args = apply_filters(
+				'shop_isle_on_sale_products_args', array(
+					'limit'             => 4,
+					'columns'           => 4,
+					'title'             => __( 'On Sale', 'shop-isle' ),
+				)
+			);
 
 			echo '<section class="shop-isle-product-section shop-isle-on-sale-products">';
 
@@ -185,7 +195,8 @@ if ( ! function_exists( 'shop_isle_homepage_content' ) ) {
 	 * @return  void
 	 */
 	function shop_isle_homepage_content() {
-		while ( have_posts() ) : the_post();
+		while ( have_posts() ) :
+			the_post();
 
 			get_template_part( 'content', 'page' );
 
