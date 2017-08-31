@@ -47,6 +47,8 @@ class MY_Status {
 			<input type="hidden" name="ID" value="<?php echo $ID;?>">
 			<p>
 				<textarea name="content" rows="5"><?php echo esc_textarea($content); ?></textarea>
+
+				<input name="post_id" value="<?php echo $post_id = the_ID() ?>" />
 			</p>
 			<p>
 				<input type="submit" value="<?=$submit_label?>">
@@ -89,12 +91,13 @@ class MY_Status {
 	
 	function post_request(){
 		global $wpdb, $user_ID;
-		
+		echo wp_verify_nonce($_REQUEST['mystatus_nonce'], 'mystatus');
+		echo $_REQUEST['mystatus_nonce'];
 		if( //! is_user_logged_in()|| 
 			! isset($_REQUEST['mystatus_nonce'])
 			|| ! wp_verify_nonce($_REQUEST['mystatus_nonce'], 'mystatus') )
 			return;
-		
+		echo wp_verify_nonce($_REQUEST['mystatus_nonce'], 'mystatus');
 		$ID = absint($_REQUEST['ID'])>0 ? $_REQUEST['ID'] : null;
 		
 		$content = trim($_REQUEST['content']);

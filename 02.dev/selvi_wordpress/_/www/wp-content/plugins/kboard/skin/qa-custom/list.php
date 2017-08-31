@@ -306,7 +306,7 @@
 					//유저가 아닐때 로그인으로 이동
 					if(confirm("로그인이 필요한 서비스입니다.\n로그인하시겠습니까?")){
 						//iframe사용으로 인한 부모창으로url이동
-						parent.change_parent_url("http://selvitest.cafe24.com/login/");
+						parent.change_parent_url("http://selvi.co.kr/login/");
 						}
 						
 				//유저일때 글쓰기로 이동

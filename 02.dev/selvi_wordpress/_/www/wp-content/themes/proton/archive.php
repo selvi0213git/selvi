@@ -2,9 +2,7 @@
 	<div class="page-title">
 		<div class="row">
 			<div class="col-md-9 col-xs-12">
-				<!--영어이름변경 20170524 eley-->
-				<!--<h1><?php echo esc_attr__("All posts in this category.","proton") ?></h1>-->
-				<h3><span style="color: #999999;">Category Results By SELVI :)</span><h3>
+				<h1><?php echo esc_attr__("All posts in this category.","proton") ?></h1>
 			</div>
 		</div>
 	</div>
@@ -15,6 +13,7 @@
 					'post_type' => 'post'
 				));
 				$query = new WP_Query($args);
+
 				if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
 			?>
 			<div class="col-md-4 col-sm-6 col-xs-12 selector">
@@ -29,15 +28,12 @@
 										$proton_post_url = excerpt(50);
 									}
 									else {
-										//에러발생으로 if라인 변경 201705523 eley
-										//if($portfolio_gallery || $proton_portfolio_gallery){
-										//	$proton_post_url = get_the_post_thumbnail_url();	
-										//}
-										//else {
-										//	$proton_post_url = get_permalink();
-										//}
-
-										$proton_post_url = get_permalink();
+										if($portfolio_gallery || $proton_portfolio_gallery){
+											$proton_post_url = get_the_post_thumbnail_url();
+										}
+										else {
+											$proton_post_url = get_permalink();
+										}
 									}
 								?>
 								<h3><a title="<?php the_title(); ?>" href="<?php echo esc_attr($proton_post_url) ?>"><?php the_title(); ?></a></h3>

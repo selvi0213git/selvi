@@ -11,15 +11,3 @@ Tags: agency, blog, business, clean, creative, freelancer, minimal, multipurpose
 Text Domain: proton-theme
 Domain Path: /lang
 */
-
-
-/*특성이미지 숨기기 20170523 eley*/
-.post.has-post-thumbnail .post-thumbnail {
-    display: none;
-}
-.single-post .attachment-post-thumbnail {
-  display: none;
-}
-.post.has-post-thumbnail {
-    padding-top: 4%;
-}

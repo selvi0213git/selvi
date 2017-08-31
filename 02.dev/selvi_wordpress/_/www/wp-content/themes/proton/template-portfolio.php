@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 	/* Template Name: Portfolio */
 	get_header();
 	$options = get_proton_options();
@@ -173,7 +173,7 @@
 					$proton_portfolio_ppp = $proton_portfolio_posts_per_page;
 				}
 				else {
-					$proton_portfolio_ppp = 20;
+					$proton_portfolio_ppp = 9;
 				}
 
 				// Paged
@@ -271,9 +271,8 @@
 				<?php if($portfolio_style == '3' || $portfolio_style == '4') :  ?>
 					<div class="meta-tags-outside">
 						<h3><a title="<?php the_title(); ?>" href="<?php echo esc_attr($proton_post_url) ?>"><?php the_title(); ?></a></h3>
-						<!--Æ÷Æ®Æú¸®¿À ÅÛÇÃ¸´ Ä«Å×°í¸® ¼û±â±â 20170523 eley-->
 						<span>
-							<!--<?php
+							<?php
 								$proton_portfolio_categories_link = $options['proton_portfolio_categories_link'];
 								if($proton_portfolio_categories_link){
 									foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; }
@@ -281,7 +280,7 @@
 								else {
 									the_category(' ');
 								}
-							?>-->
+							?>
 						</span>
 					</div>
 				<?php endif; ?>
