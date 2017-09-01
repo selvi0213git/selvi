@@ -1321,6 +1321,7 @@ button.kboard-ask-one-button-search:active {
   margin-top: 0;
   margin-left: 15px;
   margin-bottom: 20px;
+  padding-top: 4px;
   color: #555;
   font-family: 'KHNPHan Dotum Bold', sans-serif;
   font-size: 2.1875em;
