@@ -17,6 +17,7 @@
 * [RENEWAL]----------------------------------------------------------
 * [20170724] | RENEWAL                            | eley 
 * [20170731] | POPUP RENEWAL                      | eley 
+* [20170906] | 1개일때 확률로직 추가                      | eley 
 */
 
 class event_info {
@@ -95,6 +96,10 @@ class event_info {
 		//응모체크-request 및 중복체크
 		$enter  = false;
 		
+		//텍스트설정
+		$event_ck_tx   = "이벤트 종료";
+		$event_type_tx = "배송";
+		
 		//테이블에 저장된 post id값 있을때
 		if($row = $this->get_row($post_id)) {
 			//관리자 버튼설정
@@ -156,6 +161,13 @@ class event_info {
 				$enter_id = $enter_row->enter_id;
 			}
 		}
+		
+		//이벤트타입 텍스트 설정
+		if($event_type == 1){
+			$event_type_tx ="매장";
+		}else{
+			$event_type_tx ="배송";
+		}
 		?>
 	    
 		<!--폼 구성-->
@@ -171,6 +183,24 @@ class event_info {
 			<?php if($user_id != 0 && $user_roll == 1) {?>
 			
 			<!-- 관리자폼실행 -->
+			<section class="event-detail-header">
+			<?php if( $event_ck  || $event_id == ""){ ?>
+				<!-- 이벤트 종료 -->
+			<?php }else { ?>
+			<div class="event-flag-group">
+				<p class="event-flag shipping"><?php echo $event_type_tx?></p>
+				<p class="event-flag ing">진행</p>
+			</div><!-- /.event-flag-group -->
+			<?php } ?>
+			<div class="title">
+				<p class="cat">
+					<?php foreach((get_the_category()) as $category){
+							echo $category->name . ' ' ;
+					} ?>
+				</p>
+				<p class="tit"><?php echo get_the_title($post_id) ?></p>
+			</div>
+			</section>
 			
 			<table width="100%" cellspacing="0%">
 			<!--20170712-->
@@ -240,8 +270,6 @@ class event_info {
 		
 		<!-- 커스텀폼실행 -->
 		
-		<?php if($event_id != "") {?>
-		
 		<input type="hidden" id="event_prize" name="event_prize" class="numbersOnly" value="<?php echo $event_prize;?>"/>
 		<input type="hidden" id="event_enter" name="event_enter" class="numbersOnly" value="<?php echo $event_enter;?>" />
 		<input type="hidden" id="event_all_prize" name="event_all_prize" class="numbersOnly" value="<?php echo $event_all_prize;?>"/>
@@ -252,10 +280,14 @@ class event_info {
 	
 		<!-- event info part -->
 		<section class="event-detail-header">
+			<?php if( $event_ck  || $event_id == ""){ ?>
+				<!-- 이벤트 종료 -->
+			<?php }else { ?>
 			<div class="event-flag-group">
-				<p class="event-flag shipping">배송</p>
+				<p class="event-flag shipping"><?php echo $event_type_tx?></p>
 				<p class="event-flag ing">진행</p>
 			</div><!-- /.event-flag-group -->
+			<?php } ?>
 			<div class="title">
 				<p class="cat">
 					<?php foreach((get_the_category()) as $category){
@@ -264,6 +296,9 @@ class event_info {
 				</p>
 				<p class="tit"><?php echo get_the_title($post_id) ?></p>
 			</div>
+			
+			<?php if($event_id != "") {?>
+					
 			<ul class="info-list">
 				<dl class="gift-remain">
 					<dt>남은경품</dt>
@@ -338,7 +373,7 @@ class event_info {
 				});
 				
 				//시작일시 종료일시 체크로직
-				$('#event_sdate').datepicker("option", "minDate", 0);
+				//$('#event_sdate').datepicker("option", "minDate", 0); 최소오늘
 				$('#event_sdate').datepicker("option", "maxDate", $("#event_edate").val());
 				$('#event_sdate').datepicker("option", "onClose", function ( selectedDate ) {
 					$("#event_edate").datepicker( "option", "minDate", selectedDate );
@@ -539,43 +574,101 @@ class event_info {
 						//남은시간 분으로 환산한 값
 						var remain_min = showRemaining();
 						
-						if(Math.random()<((event_prize/remain_min)*100)){
-							//당첨시
-							//남은경품 -1 //event_prize-1; //status = 1
-							document.getElementById("event_prize").value = event_prize;
+						//20170906 1개이하 확률로직 추가
+						if(event_prize == 1){
+							//남은일수 확률 재측정 범위설정
+							if(remain_min < 2) {
+								//범위설정 랜덤
+								if(Math.random()<((event_prize/remain_min)*100)){
+									//당첨시
+									//남은경품 -1 //event_prize-1; //status = 1
+									document.getElementById("event_prize").value = event_prize;
 
-							event_prize = parseInt(event_prize)-1;
-							document.getElementById("event_prize").value = event_prize;
-							
-							status = 1;
-							document.getElementById("status").value = status;
-							
-							// POPUP RENEWAL -------------------------------------------------------------------------------------->
-							
-							/* SUBMIT */
-							jQuery("#eventinfo-form").submit();
-							
-							/* ENTER TRUE */
-							openApplyRoulette(2);
-							
-						}else{
-							//미당첨시
-							//status = 0
-							status = 0;
-							document.getElementById("status").value = status;
-							
-							// POPUP RENEWAL -------------------------------------------------------------------------------------->
-							
-							/* SUBMIT */
-							jQuery("#eventinfo-form").submit();
-							
-							/* ENTER FALSE*/
-							openApplyRoulette(1);
+									event_prize = parseInt(event_prize)-1;
+									document.getElementById("event_prize").value = event_prize;
+									
+									status = 1;
+									document.getElementById("status").value = status;
+									
+									// POPUP RENEWAL -------------------------------------------------------------------------------------->
+									
+									/* SUBMIT */
+									jQuery("#eventinfo-form").submit();
+									
+									/* ENTER TRUE */
+									openApplyRoulette(2);
+									
+								}else {
+									//미당첨시
+									//status = 0
+									status = 0;
+									document.getElementById("status").value = status;
+									
+									// POPUP RENEWAL -------------------------------------------------------------------------------------->
+									
+									/* SUBMIT */
+									jQuery("#eventinfo-form").submit();
+									
+									/* ENTER FALSE*/
+									openApplyRoulette(1);
+								}
+								
+							//범위 X
+							}else {
+								//미당첨시
+								//status = 0
+								status = 0;
+								document.getElementById("status").value = status;
+								
+								// POPUP RENEWAL -------------------------------------------------------------------------------------->
+								
+								/* SUBMIT */
+								jQuery("#eventinfo-form").submit();
+								
+								/* ENTER FALSE*/
+								openApplyRoulette(1);
+							}
+						
+						//일반
+						}else {
+							if(Math.random()<((event_prize/remain_min)*100)){
+								//당첨시
+								//남은 경품 -1 //event_prize-1; //status = 1
+								document.getElementById("event_prize").value = event_prize;
+
+								event_prize = parseInt(event_prize)-1;
+								document.getElementById("event_prize").value = event_prize;
+								
+								status = 1;
+								document.getElementById("status").value = status;
+								
+								// POPUP RENEWAL -------------------------------------------------------------------------------------->
+								
+								/* SUBMIT */
+								jQuery("#eventinfo-form").submit();
+								
+								/* ENTER TRUE */
+								openApplyRoulette(2);
+								
+							}else{
+								//미당첨시
+								//status = 0
+								status = 0;
+								document.getElementById("status").value = status;
+								
+								// POPUP RENEWAL -------------------------------------------------------------------------------------->
+								
+								/* SUBMIT */
+								jQuery("#eventinfo-form").submit();
+								
+								/* ENTER FALSE*/
+								openApplyRoulette(1);
+							}
 						}
 						
 					//공유하지 않았을때
 					} else {
-						alert('이벤트 응모가 취소되었습니다.');
+						alert('이벤트 응모가 취소되었습니다.\n응모가 제대로 되지않을 경우 다른 브라우저로 접속해주세요.');
 					}
 				
 				});

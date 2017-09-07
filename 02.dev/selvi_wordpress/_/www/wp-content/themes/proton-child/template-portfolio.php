@@ -260,7 +260,7 @@
 							$event_enter     = '';
 							$event_type      = 0;
 							
-							$event_ck_tx = "마감";
+							$event_ck_tx = "이벤트 종료";
 							$event_type_tx = "배송";
 							$event_prize_class = "row2";
 							
@@ -292,7 +292,7 @@
 								}
 							}
 							
-							//이벤트 진행/마감 텍스트 설정
+							//이벤트 진행/이벤트 종료 텍스트 설정
 							if($event_ck == true){
 								$event_ck_tx ="진행";
 							}else{
