@@ -5,6 +5,7 @@
 * [after]
 * [RENEWAL]----------------------------------------------------------
 * [20170728] | RENEWAL                            | eley 
+* [20170907] | 카테고리 오류수정                         | eley 
 */
 
 class relation_list {
@@ -239,6 +240,7 @@ class relation_list {
 						<div class="title">
 							<p class="cat">
 								<?php
+								/* 20170907 카테고리 오류 수정
 									$proton_portfolio_categories_link = $options['proton_portfolio_categories_link'];
 									if($proton_portfolio_categories_link){
 										foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; }
@@ -246,6 +248,10 @@ class relation_list {
 									else {
 										the_category(' ');
 									}
+								*/	
+									$category = get_the_category($post_id); 
+									echo $category[0]->name;
+									
 								?>
 							</p>
 							<p class="tit"><?php echo get_the_title($post_id) ?></p>

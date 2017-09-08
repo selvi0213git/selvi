@@ -69,7 +69,7 @@
 											<option value="답변완료"<?php if($content->category2 == '답변완료'):?> selected<?php endif?>>답변완료</option>
 										</select>
 									</div>
-									<div class="description col-12" style="color:red;">※ 관리자는 상태를 답변완료로 꼭 변경해주시기 바랍니다.</div>
+									<div class="description col-12" style="color:red;">※ 상태 '답변완료' 변경 > 등록 > 답글쓰기 > 상태 '상태없음' 유지 > 내용기입 > 등록 </div>
 								</div>
 							</dd>
 						</dl>
