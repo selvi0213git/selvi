@@ -84,6 +84,7 @@ class relation_list {
 			
 			$event_ck_tx = "마감";
 			$event_type_tx = "배송";
+			$event_type_class = "event-flag shipping col-6";
 			
 			if(isset($relation_row)){
 				//변수설정
@@ -123,8 +124,10 @@ class relation_list {
 			//이벤트타입 텍스트 설정
 			if($event_type == 1){
 				$event_type_tx ="매장";
+				$event_type_class = "event-flag shop col-6";
 			}else{
 				$event_type_tx ="배송";
+				$event_type_class = "event-flag shipping col-6";
 			}
 			?>
 			
@@ -186,7 +189,7 @@ class relation_list {
 							<ul class="row1">
 								<li class="flags">
 									<div class="event-flag-group flex">
-										<p class="event-flag shipping col-6"><?php echo $event_type_tx ?></p>
+										<p class="<?php echo $event_type_class ?>"><?php echo $event_type_tx ?></p>
 										<p class="event-flag ing col-6"><?php echo $event_ck_tx ?></p>
 									</div><!-- /.event-flag-group -->
 								</li>

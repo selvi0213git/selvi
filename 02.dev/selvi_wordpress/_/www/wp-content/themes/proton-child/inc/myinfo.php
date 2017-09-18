@@ -50,7 +50,7 @@ class my_info {
 		//todo : 비로그인 유저 보여줄 화면 필요함
 		
 		//초기값 init
-		$user_pic   = 'http://selvitest.cafe24.com/wp-content/uploads/2017/07/selvi_login.gif';
+		$user_pic   = 'http://selvi.co.kr/wp-content/uploads/2017/07/selvi_login.gif';
 		$user_nic   = ($user_id != 0) ? $current_user->display_name : '';
 		$user_name  = ($user_id != 0) ? $current_user->user_realname : '';
 		$user_phone = ($user_id != 0) ? $current_user->user_phone : '';

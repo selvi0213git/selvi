@@ -262,6 +262,7 @@
 							
 							$event_ck_tx = "이벤트 종료";
 							$event_type_tx = "배송";
+							$event_type_class = "event-flag shipping col-6";
 							$event_prize_class = "row2";
 							
 							if($row = get_row($post_id)) {
@@ -302,8 +303,10 @@
 							//이벤트타입 텍스트 설정
 							if($event_type == 1){
 								$event_type_tx ="매장";
+								$event_type_class = "event-flag shop col-6";
 							}else{
 								$event_type_tx ="배송";
+								$event_type_class = "event-flag shipping col-6";
 							}
 							
 							//경품 자릿수체크 클래스변경
@@ -390,7 +393,7 @@
 									<li class="flags">
 										<?php if($event_ck==true){?>
 										<div class="event-flag-group flex">
-											<p class="event-flag shipping col-6"><?php echo $event_type_tx ?></p>
+											<p class="<?php echo $event_type_class ?>"><?php echo $event_type_tx ?></p>
 											<p class="event-flag ing col-6"><?php echo $event_ck_tx ?></p>
 										</div><!-- /.event-flag-group -->
 										<?php } else { ?>
@@ -435,6 +438,8 @@
 								
 								//+ 응모확인 딱지 추가
 								//<!-- yeonok: add status flag 20170824 -->
+								//<!-- yeonok: add text-flag-group 20170913 -->
+								echo '<div class="text-flag-group">' ; 
 								if( $row->event_id != '' && $event_ck == true){ //+이벤트등록 안되있거나 or 종료된이벤트 아닐때
 									if( $result_enter == true){ //응모가능
 										echo 
@@ -450,6 +455,7 @@
 											</span>';
 									}
 								}
+								echo '</div><!-- /.text-flag-group -->';
 								
 								//스크립트 변수설정을 위한 변수++
 								$i++;

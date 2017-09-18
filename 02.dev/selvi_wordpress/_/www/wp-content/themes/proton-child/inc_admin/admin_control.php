@@ -35,9 +35,9 @@ class admin_control {
 				if(admin_menu == 'info'){
 					window.location.href= "/admin_info";
 				}else if(admin_menu == 'event'){
-					window.location.href= "http://selvitest.cafe24.com/";
+					window.location.href= "http://selvi.co.kr/";
 				}else if(admin_menu == 'ad'){
-					window.location.href= "http://selvitest.cafe24.com/wp-admin/admin.php?page=metaslider";
+					window.location.href= "http://selvi.co.kr/wp-admin/admin.php?page=metaslider";
 				}else if(admin_menu == 'list'){
 					window.location.href= "/admin_list";
 				}else if(admin_menu == 'statistics'){

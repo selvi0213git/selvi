@@ -99,6 +99,7 @@ class event_info {
 		//텍스트설정
 		$event_ck_tx   = "이벤트 종료";
 		$event_type_tx = "배송";
+		$event_type_class = "event-flag shipping";
 		
 		//테이블에 저장된 post id값 있을때
 		if($row = $this->get_row($post_id)) {
@@ -165,8 +166,10 @@ class event_info {
 		//이벤트타입 텍스트 설정
 		if($event_type == 1){
 			$event_type_tx ="매장";
+			$event_type_class = "event-flag shop";
 		}else{
 			$event_type_tx ="배송";
+			$event_type_class = "event-flag shipping";
 		}
 		?>
 	    
@@ -188,7 +191,7 @@ class event_info {
 				<!-- 이벤트 종료 -->
 			<?php }else { ?>
 			<div class="event-flag-group">
-				<p class="event-flag shipping"><?php echo $event_type_tx?></p>
+				<p class="<?php echo $event_type_class ?>"><?php echo $event_type_tx?></p>
 				<p class="event-flag ing">진행</p>
 			</div><!-- /.event-flag-group -->
 			<?php } ?>
@@ -284,7 +287,7 @@ class event_info {
 				<!-- 이벤트 종료 -->
 			<?php }else { ?>
 			<div class="event-flag-group">
-				<p class="event-flag shipping"><?php echo $event_type_tx?></p>
+				<p class="<?php echo $event_type_class ?>"><?php echo $event_type_tx?></p>
 				<p class="event-flag ing">진행</p>
 			</div><!-- /.event-flag-group -->
 			<?php } ?>
@@ -577,7 +580,7 @@ class event_info {
 						//20170906 1개이하 확률로직 추가
 						if(event_prize == 1){
 							//남은일수 확률 재측정 범위설정
-							if(remain_min < 2) {
+							if(remain_min < 4320) {
 								//범위설정 랜덤
 								if(Math.random()<((event_prize/remain_min)*100)){
 									//당첨시
