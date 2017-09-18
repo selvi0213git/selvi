@@ -334,6 +334,34 @@
 							if($user_result_row){
 								$result_enter = false;
 							}
+							
+							//20170911 유저 접속 체크
+							$user_by    = ($user_id != 0) ? $current_user->user_login : '';
+							$user_nicename    = ($user_id != 0) ? $current_user->user_nicename : '';
+							$user_url_ck = ($user_id != 0) ? $current_user->user_url : '';
+							
+							$user_connect_ck = '';
+							
+							/*보류
+							//네이버
+							if(substr($user_by,0,5) == 'naver' || substr($user_nicename,-9) == 'naver-com') {
+								$user_connect_ck = 'naver';
+							}
+							*/
+							
+							//카카오
+							if(substr($user_by,0,5) == 'kakao' || substr($user_nicename,-9) == 'naver-com') {
+								$user_connect_ck = 'kakao';
+							}
+							//카카오메일
+							if(substr($user_by,-12) == '@hanmail.net' || substr($user_nicename,-11) == 'hanmail-net') {
+								$user_connect_ck = 'kakao';
+							}
+							
+							//페이스북
+							if(substr($user_by,0,8) == 'facebook' || substr($user_url_ck,11,8) == 'facebook') {
+								$user_connect_ck = 'facebook';
+							}
 						?>
 						
 						<!-- timer setting-->
@@ -441,19 +469,37 @@
 								//<!-- yeonok: add text-flag-group 20170913 -->
 								echo '<div class="text-flag-group">' ; 
 								if( $row->event_id != '' && $event_ck == true){ //+이벤트등록 안되있거나 or 종료된이벤트 아닐때
-									if( $result_enter == true){ //응모가능
+									
+									//facebook
+									if( ($user_connect_ck == 'facebook' && $result_enter == true) || $user_connect_ck != 'facebook'){ //응모가능
 										echo 
-											'<span class="text-flag">
+											'<span class="text-flag bgcolor-facebook">
 												<i class="icon facebook xs"></i>
 												<span class="tit">응모가능</span>
 											</span>';
 									}else if( $result_enter == false){ //응모불가능
 										echo 
-											'<span class="text-flag disabled">
+											'<span class="text-flag bgcolor-facebook disabled">
 												<i class="icon facebook xs"></i>
 												<span class="tit">응모완료</span>
 											</span>';
 									}
+									
+									//kakaostroy
+									if( ($user_connect_ck == 'kakao' && $result_enter == true) || $user_connect_ck != 'kakao'){ //응모가능
+										echo 
+											'<span class="text-flag bgcolor-kakao">
+												<i class="icon kakaostory xs"></i>
+												<span class="tit">응모가능</span>
+											</span>';
+									}else if( $result_enter == false){ //응모불가능
+										echo 
+											'<span class="text-flag bgcolor-kakao disabled">
+												<i class="icon kakaostory xs"></i>
+												<span class="tit">응모완료</span>
+											</span>';
+									}
+									
 								}
 								echo '</div><!-- /.text-flag-group -->';
 								

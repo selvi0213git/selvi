@@ -48,6 +48,34 @@ class relation_list {
 		wp_get_current_user();
 		$user_id = $current_user->ID;
 		
+		//20170911 유저 접속 체크
+		$user_by    = ($user_id != 0) ? $current_user->user_login : '';
+		$user_nicename    = ($user_id != 0) ? $current_user->user_nicename : '';
+		$user_url_ck = ($user_id != 0) ? $current_user->user_url : '';
+		
+		$user_connect_ck = '';
+		
+		/*보류
+		//네이버
+		if(substr($user_by,0,5) == 'naver' || substr($user_nicename,-9) == 'naver-com') {
+			$user_connect_ck = 'naver';
+		}
+		*/
+		
+		//카카오
+		if(substr($user_by,0,5) == 'kakao' || substr($user_nicename,-9) == 'naver-com') {
+			$user_connect_ck = 'kakao';
+		}
+		//카카오메일
+		if(substr($user_by,-12) == '@hanmail.net' || substr($user_nicename,-11) == 'hanmail-net') {
+			$user_connect_ck = 'kakao';
+		}
+		
+		//페이스북
+		if(substr($user_by,0,8) == 'facebook' || substr($user_url_ck,11,8) == 'facebook') {
+			$user_connect_ck = 'facebook';
+		}
+		
 		//포스트정보 가져옴
 		$post_id = get_the_ID();
 		
@@ -229,11 +257,26 @@ class relation_list {
 								
 							//+ 응모확인 딱지 추가
 							//<!-- yeonok: add status flag 20170824 -->
-							echo 
-								'<span class="text-flag">
-									<i class="icon facebook xs"></i>
-									<span class="tit">응모가능</span>
-								</span>';
+							//<!-- yeonok: add text-flag-group 20170913 -->
+							echo '<div class="text-flag-group">' ; 
+								//facebook
+								if( $user_connect_ck == 'facebook' || $user_connect_ck != 'facebook'){ //응모가능
+									echo 
+										'<span class="text-flag bgcolor-facebook">
+											<i class="icon facebook xs"></i>
+											<span class="tit">응모가능</span>
+										</span>';
+								}
+								
+								//kakaostroy
+								if( $user_connect_ck == 'kakao' || $user_connect_ck != 'kakao'){ //응모가능
+									echo 
+										'<span class="text-flag bgcolor-kakao">
+											<i class="icon kakaostory xs"></i>
+											<span class="tit">응모가능</span>
+										</span>';
+								}
+							echo '</div><!-- /.text-flag-group -->';
 							
 							//스크립트 변수설정을 위한 변수++
 							$i++;
