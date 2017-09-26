@@ -21,7 +21,8 @@
 *
 * [20170911] | 응모채널 추가 대응                        | eley 
 * [20170914] | 응모채널 추가에 따른 응모기능 추가              | eley 
-* [20170915] | 채널별 응답확인                               | eley 
+* [20170915] | 채널별 응답확인                          | eley 
+* [20170921] | 확률값 세팅 변경                         | eley 
 */
 
 class event_info {
@@ -568,6 +569,7 @@ class event_info {
 			//당첨로직
 			function set_probability() {
 				//확률계산을 위한 변수
+				var event_all_prize = "<?php echo $event_all_prize;?>";
 				var event_prize = "<?php echo $event_prize;?>";
 				var event_end   = "<?php echo $event_end;?>";
 				var event_enter = "<?php echo $event_enter;?>";
@@ -579,7 +581,6 @@ class event_info {
 				document.getElementById("status").value = status;
 				
 				//당첨자 선정 랜덤함수
-				//확률 = 경품 % 시간 * 100
 				event_end = event_end.replace(/-/g, '/');//IE에서는 지원안함 NAN표시 -> .replace("-","/")
 				var end = new Date(event_end);
 				var _second = 1000;
@@ -589,26 +590,32 @@ class event_info {
 				
 				function showRemaining() {
 					var now = new Date();
-					var distance = end - now;
+					var distance = end - now; //(초)
 					
 					if (distance > 0) {
 						clearInterval(timer);
-						var days = distance / _day;
-						var min = days*24*60;
+						var mins  = distance / 60 / 1000; //세팅값때문에 /1000 showRemaining()참고
+						var hours = mins / 60;
+						var days  = hours / 24;
 					}
-					return min;
+					//확률값 기준 세팅
+					return hours;
 				}
 				timer = setInterval(showRemaining, 1000);
 				
-				//남은시간 분으로 환산한 값
-				var remain_min = showRemaining();
+				//20170921 남은시간 시간으로 환산
+				var remain_time = showRemaining();
+				
+				//확률 설정
+				//확률 = (남은경품/남은시간) * (남은경품/전체경품) * 10 (10은 확률값추가설정) 
+				var probability = (event_prize/remain_time)*(event_prize/event_all_prize)*10;
 				
 				//20170906 1개이하 확률로직 추가
 				if(event_prize == 1){
 					//남은일수 확률 재측정 범위설정
-					if(remain_min < 4320) {
+					if(remain_time < 72) {
 						//범위설정 랜덤
-						if(Math.random()<((event_prize/remain_min)*100)){
+						if(Math.random()< probability){
 							//당첨시
 							//남은경품 -1 //event_prize-1; //status = 1
 							document.getElementById("event_prize").value = event_prize;
@@ -660,7 +667,7 @@ class event_info {
 				
 				//일반
 				}else {
-					if(Math.random()<((event_prize/remain_min)*100)){
+					if(Math.random()< probability){
 						//당첨시
 						//남은 경품 -1 //event_prize-1; //status = 1
 						document.getElementById("event_prize").value = event_prize;

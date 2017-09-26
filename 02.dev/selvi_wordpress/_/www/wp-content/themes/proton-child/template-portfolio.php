@@ -369,7 +369,18 @@
 						//time설정
 						var event_end = '<?php echo date("Y-m-d H:i:s", strtotime($event_end))?>';
 						
-						if(event_end != '') {
+						//남은시간안보이게 조건추가
+						<?php
+						//남은경품이 0이거나 남은시간이 없을때 응모버튼비활성화
+						if((strtotime($event_end_t) <= strtotime($curnt_t)) || $event_prize == "0" || $event_prize == ""){
+							$event_ck = false;
+						}else{
+							$event_ck = true;
+						}
+						?>
+						var event_ck = '<?php echo $event_ck ?>';
+						
+						if(event_end != '' && event_ck == '1') {
 							//타이머 함수 호출
 							CountDownTimer(event_end,'event_countdown_<?php echo $i ?>');
 						}
